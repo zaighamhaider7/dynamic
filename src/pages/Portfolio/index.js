@@ -1,0 +1,5 @@
+export * from './Portfolio'
+export * from './OurPortfolio'
+export * from './SoftwareDevelopmentPage'
+export * from './MobileAppsPage'
+export * from './DigitalMarketingPage'
