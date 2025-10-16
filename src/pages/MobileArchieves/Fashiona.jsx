@@ -3,13 +3,13 @@ import Navbar from '../../components/Generic/Navbar'
 import ServiceHeader from '../../components/Services/ServiceHeader'
 import Footer from '../../components/Generic/Footer'
 
-const Travelica = () => {
+const Fashiona = () => {
 
     const Headdata = {
         pill: "Our Work",
-        titleOrange: "TRAVELICA",
+        titleOrange: "FASHIONA",
         title: "MOBILE APP",
-        description: "Explore new destinations with ease. Travelica helps users build custom itineraries, discover hidden gems, and get real-time travel updates—making every journey smooth, safe, and unforgettable."
+        description: "Redefine your style journey. Fashiona brings the world of fashion to your fingertips—featuring curated collections, trending looks, and effortless shopping experiences designed for today’s modern shopper."
     }
 
     return (
@@ -33,14 +33,14 @@ const Travelica = () => {
                             Our Top Rated Designs
                         </div>
                         <h2 className='text-5xl font-semibold text-white'>
-                            Travelica – Case Study
+                           Fashiona – Case Study
                         </h2>
                         <p className="text-gray-800">
-                            Dive into real-world examples of how we've helped brands boost visibility, drive conversions, and scale with confidence.
+                            See how Fashiona transforms digital fashion retail by blending trend discovery with seamless eCommerce, giving users a personalized and inspiring way to shop for what suits them best.
                         </p>
                     </div>
 
-                    <img src='/images/appsPortfolio/Travel App/Travel Banner.jpeg' className='w-full mt-20 mb-20 rounded-2xl' />
+                    <img src='/images/appsPortfolio/Fashion App/Fashion Banner.jpeg' className='w-full mt-20 mb-20 rounded-2xl' />
 
                     <div className="grid lg:grid-cols-5 grid-cols-1 gap-8">
                         <div className='lg:col-span-2'>
@@ -48,10 +48,10 @@ const Travelica = () => {
                         </div>
                         <div className='lg:col-span-3'>
                             <p className='text-xl text-white mb-5'>
-                                Travelica is a thoughtfully designed mobile app concept aimed at simplifying the way people plan their travels. In a world full of overwhelming options and scattered resources, Travelica brings everything into one place—allowing users to discover exciting destinations, craft personalized itineraries, and receive timely updates for a smooth and stress-free journey.
+                                Fashiona is an elegantly crafted mobile app concept designed to revolutionize how people explore and shop for fashion. In a space filled with countless brands and overwhelming choices, Fashiona simplifies the experience by combining curated collections, style recommendations, and secure shopping into one intuitive platform.
                             </p>
                             <p className='text-xl text-white'>
-                               Whether it's a weekend getaway or a month-long adventure, Travelica helps users make smarter travel choices with confidence. The app focuses on providing a visually immersive experience paired with intuitive navigation, ensuring users feel inspired and in control from the very first tap.
+                                From clothing and accessories to exclusive designer drops, the app provides users with a sleek and immersive experience. Fashiona celebrates individuality—empowering users to express their personal style through a well-organized, visually stunning interface that feels both luxurious and easy to use.
                             </p>
                         </div>
                     </div>
@@ -67,8 +67,8 @@ const Travelica = () => {
                         >
                             Your browser does not support the video tag.
                         </video> */}
-                        <img src="/images/travelica-vid-2.webp" alt="" className='travelica-img' />
-                        <img src="/images/travelica-vid-3.webp" alt="" className='travelica-img' />
+                        <img src="/images/appsPortfolio/Fashion App/Fashion 5 Screen App/1.png" alt="" className='travelica-img' />
+                        <img src="/images/appsPortfolio/Fashion App/Fashion 5 Screen App/2.png" alt="" className='travelica-img' />
                     </div>
 
                     <div className="grid lg:grid-cols-5 grid-cols-1 gap-8 lg:mb-28 mb-16">
@@ -77,27 +77,30 @@ const Travelica = () => {
                         </div>
                         <div className='lg:col-span-3'>
                             <p className='text-xl text-white mb-5'>
-                               Travelica was designed to solve this problem by creating a clean, modern interface that's not only visually inspiring but also deeply user-centric. The aim was to give users full control over how they discover destinations, organize itineraries, and manage travel details—all within a single, intuitive platform. From the very first screen, the experience encourages exploration while reducing the friction often associated with travel planning.
+                               The goal behind Fashiona was to create a modern fashion platform that merges aesthetics with functionality. The app was designed to deliver a premium browsing and shopping experience—one where users can discover trends, explore styles, and make confident purchases, all within a visually captivating environment.
+                            </p>
+                            <p className='text-xl text-white mb-5'>
+                               Every interaction, from viewing product details to completing a purchase, was refined to feel effortless and enjoyable. Fashiona aims to build trust, excitement, and connection between users and the fashion they love.
                             </p>
                         </div>
                     </div>
 
                     <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-10 gap-6">
                         <div>
-                            <img src="/images/the-goal-mob.webp" alt="" />
+                            <img className='mt-20 mb-20 rounded-2xl' src="/images/appsPortfolio/Fashion App/Fashion 5 Screen App/5.png" alt="" />
                             <p className='text-3xl text-white'>
-                                Many travel apps offer generic suggestions and lack personalization. The goal was to create a sleek, intuitive interface that feels inspiring and gives users control over how they discover and organize their trips.
+                                While many fashion apps focus solely on catalog listings, Fashiona focuses on experience. It blends inspiration, personalization, and convenience—helping users discover new trends, shop their favorites, and express their style with confidence.
                             </p>
                         </div>
                         <div className="grid grid-flow-row lg:gap-10 gap-6">
-                            <img src="/images/goal-2.webp" alt="" className='travelica-img' />
-                            <img src="/images/goal-3.webp" alt="" className='travelica-img' />
+                            <img src="/images/appsPortfolio/Fashion App/Fashion 5 Screen App/4.png" alt="" className='travelica-img' />
+                            <img src="/images/appsPortfolio/Fashion App/Fashion 5 Screen App/3.png" alt="" className='travelica-img' />
                         </div>
                     </div>
 
                     <div className='lg:py-28 py-16'>
                         <h3 className='text-center text-5xl uppercase font-semibold font-space-grotesk text-white lg:mb-28 mb-16'>
-                            Ensuring trust in the TRaveling world
+                            Inspiring confidence through every look and design.
                         </h3>
                         {/* <video
                             src="/images/travelica-vid-4.mp4"
@@ -112,9 +115,10 @@ const Travelica = () => {
                     </div>
                 </div>
             </div>
-             <Footer />
+            <Footer />
         </div>
+       
     )
 }
 
-export default Travelica
+export default Fashiona

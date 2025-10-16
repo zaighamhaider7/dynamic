@@ -3,13 +3,13 @@ import Navbar from '../../components/Generic/Navbar'
 import ServiceHeader from '../../components/Services/ServiceHeader'
 import Footer from '../../components/Generic/Footer'
 
-const Travelica = () => {
+const Soundra = () => {
 
     const Headdata = {
         pill: "Our Work",
-        titleOrange: "TRAVELICA",
+        titleOrange: "SOUNDRA",
         title: "MOBILE APP",
-        description: "Explore new destinations with ease. Travelica helps users build custom itineraries, discover hidden gems, and get real-time travel updates—making every journey smooth, safe, and unforgettable."
+        description: "Listen. Share. Connect. Soundra transforms how users discover and enjoy music—bringing personalized playlists, song recommendations, and community-driven sharing into one elegant and immersive experience."
     }
 
     return (
@@ -33,14 +33,14 @@ const Travelica = () => {
                             Our Top Rated Designs
                         </div>
                         <h2 className='text-5xl font-semibold text-white'>
-                            Travelica – Case Study
+                           Soundra – Case Study
                         </h2>
                         <p className="text-gray-800">
-                            Dive into real-world examples of how we've helped brands boost visibility, drive conversions, and scale with confidence.
+                           See how Soundra redefines the music experience by combining smart discovery with social interaction—helping users explore new sounds, share favorites, and connect through the universal language of music.
                         </p>
                     </div>
 
-                    <img src='/images/appsPortfolio/Travel App/Travel Banner.jpeg' className='w-full mt-20 mb-20 rounded-2xl' />
+                    <img src='/images/appsPortfolio/Music App/Music App.png' className='w-full mt-20 mb-20 rounded-2xl' />
 
                     <div className="grid lg:grid-cols-5 grid-cols-1 gap-8">
                         <div className='lg:col-span-2'>
@@ -48,10 +48,10 @@ const Travelica = () => {
                         </div>
                         <div className='lg:col-span-3'>
                             <p className='text-xl text-white mb-5'>
-                                Travelica is a thoughtfully designed mobile app concept aimed at simplifying the way people plan their travels. In a world full of overwhelming options and scattered resources, Travelica brings everything into one place—allowing users to discover exciting destinations, craft personalized itineraries, and receive timely updates for a smooth and stress-free journey.
+                                Soundra is a next-generation music app concept designed to make discovering and sharing music more intuitive and human. In a digital world driven by algorithms, Soundra brings back the personal touch—allowing users to create, suggest, and explore songs through meaningful social connections.
                             </p>
                             <p className='text-xl text-white'>
-                               Whether it's a weekend getaway or a month-long adventure, Travelica helps users make smarter travel choices with confidence. The app focuses on providing a visually immersive experience paired with intuitive navigation, ensuring users feel inspired and in control from the very first tap.
+                                The app offers a seamless interface where users can follow friends, build collaborative playlists, and uncover trending tracks that match their moods and preferences. With its clean design and interactive features, Soundra bridges the gap between technology and emotion—turning music streaming into a shared journey.
                             </p>
                         </div>
                     </div>
@@ -67,8 +67,8 @@ const Travelica = () => {
                         >
                             Your browser does not support the video tag.
                         </video> */}
-                        <img src="/images/travelica-vid-2.webp" alt="" className='travelica-img' />
-                        <img src="/images/travelica-vid-3.webp" alt="" className='travelica-img' />
+                        <img src="/images/appsPortfolio/Music App/Music 5 Screen App/2.png" alt="" className='travelica-img' />
+                        <img src="/images/appsPortfolio/Music App/Music 5 Screen App/3.png" alt="" className='travelica-img' />
                     </div>
 
                     <div className="grid lg:grid-cols-5 grid-cols-1 gap-8 lg:mb-28 mb-16">
@@ -77,27 +77,30 @@ const Travelica = () => {
                         </div>
                         <div className='lg:col-span-3'>
                             <p className='text-xl text-white mb-5'>
-                               Travelica was designed to solve this problem by creating a clean, modern interface that's not only visually inspiring but also deeply user-centric. The aim was to give users full control over how they discover destinations, organize itineraries, and manage travel details—all within a single, intuitive platform. From the very first screen, the experience encourages exploration while reducing the friction often associated with travel planning.
+                               The goal of Soundra was to design a platform that makes music feel personal again. Rather than focusing solely on automated playlists, Soundra encourages human connection and curation—giving users the power to share songs, inspire others, and experience music together.
+                            </p>
+                            <p className='text-xl text-white mb-5'>
+                               Every screen and feature was built around interaction, simplicity, and discovery, ensuring that users not only listen but also connect through the soundtracks that define their moments.
                             </p>
                         </div>
                     </div>
 
                     <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-10 gap-6">
                         <div>
-                            <img src="/images/the-goal-mob.webp" alt="" />
+                            <img className='mt-20 mb-20 rounded-2xl' src="/images/appsPortfolio/Music App/Music 5 Screen App/5.png" alt="" />
                             <p className='text-3xl text-white'>
-                                Many travel apps offer generic suggestions and lack personalization. The goal was to create a sleek, intuitive interface that feels inspiring and gives users control over how they discover and organize their trips.
+                                Most music apps revolve around consumption. Soundra celebrates connection—allowing users to discover, share, and experience music together in a space that’s personal, expressive, and inspiring. It’s not just about listening—it’s about belonging.
                             </p>
                         </div>
                         <div className="grid grid-flow-row lg:gap-10 gap-6">
-                            <img src="/images/goal-2.webp" alt="" className='travelica-img' />
-                            <img src="/images/goal-3.webp" alt="" className='travelica-img' />
+                            <img src="/images/appsPortfolio/Music App/Music 5 Screen App/1.png" alt="" className='travelica-img' />
+                            <img src="/images/appsPortfolio/Music App/Music 5 Screen App/4.png" alt="" className='travelica-img' />
                         </div>
                     </div>
 
                     <div className='lg:py-28 py-16'>
                         <h3 className='text-center text-5xl uppercase font-semibold font-space-grotesk text-white lg:mb-28 mb-16'>
-                            Ensuring trust in the TRaveling world
+                            Where music meets connection.
                         </h3>
                         {/* <video
                             src="/images/travelica-vid-4.mp4"
@@ -112,9 +115,10 @@ const Travelica = () => {
                     </div>
                 </div>
             </div>
-             <Footer />
+            <Footer />
         </div>
+       
     )
 }
 
-export default Travelica
+export default Soundra 

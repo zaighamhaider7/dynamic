@@ -3,13 +3,13 @@ import Navbar from '../../components/Generic/Navbar'
 import ServiceHeader from '../../components/Services/ServiceHeader'
 import Footer from '../../components/Generic/Footer'
 
-const Travelica = () => {
+const Torkbiz  = () => {
 
     const Headdata = {
         pill: "Our Work",
-        titleOrange: "TRAVELICA",
+        titleOrange: "TORKBIZ",
         title: "MOBILE APP",
-        description: "Explore new destinations with ease. Travelica helps users build custom itineraries, discover hidden gems, and get real-time travel updates—making every journey smooth, safe, and unforgettable."
+        description: "Empower your business decisions with Torkbiz—a strategic consulting platform that delivers actionable insights in finance, operations, HR, supply chain, and marketing. Built to optimize performance and unlock sustainable growth."
     }
 
     return (
@@ -33,14 +33,14 @@ const Travelica = () => {
                             Our Top Rated Designs
                         </div>
                         <h2 className='text-5xl font-semibold text-white'>
-                            Travelica – Case Study
+                           Torkbiz – Case Study
                         </h2>
                         <p className="text-gray-800">
-                            Dive into real-world examples of how we've helped brands boost visibility, drive conversions, and scale with confidence.
+                           See how Torkbiz transforms complex business challenges into strategic opportunities through smart consulting tools, financial intelligence, and operational excellence.
                         </p>
                     </div>
 
-                    <img src='/images/appsPortfolio/Travel App/Travel Banner.jpeg' className='w-full mt-20 mb-20 rounded-2xl' />
+                    <img src='/images/laptops/5/6.png' className='w-full mt-20 mb-20 rounded-2xl' />
 
                     <div className="grid lg:grid-cols-5 grid-cols-1 gap-8">
                         <div className='lg:col-span-2'>
@@ -48,10 +48,13 @@ const Travelica = () => {
                         </div>
                         <div className='lg:col-span-3'>
                             <p className='text-xl text-white mb-5'>
-                                Travelica is a thoughtfully designed mobile app concept aimed at simplifying the way people plan their travels. In a world full of overwhelming options and scattered resources, Travelica brings everything into one place—allowing users to discover exciting destinations, craft personalized itineraries, and receive timely updates for a smooth and stress-free journey.
+                                Torkbiz is an advanced business consulting and management software designed to streamline strategic decision-making. By combining analytics, process optimization, and expert consulting frameworks, Torkbiz empowers organizations to identify inefficiencies, reduce costs, and scale effectively.
                             </p>
                             <p className='text-xl text-white'>
-                               Whether it's a weekend getaway or a month-long adventure, Travelica helps users make smarter travel choices with confidence. The app focuses on providing a visually immersive experience paired with intuitive navigation, ensuring users feel inspired and in control from the very first tap.
+                              The platform unites multiple business domains—financial advisory, operational management, HR consulting, supply chain optimization, and marketing strategy—into one cohesive ecosystem. From real-time data visualization to tailored performance recommendations, Torkbiz helps companies make confident, informed decisions that drive measurable results.
+                            </p>
+                            <p className='text-xl text-white mt-5'>
+                                Whether supporting startups or established enterprises, Torkbiz adapts to each organization’s unique needs—delivering clarity, consistency, and control across all business functions.
                             </p>
                         </div>
                     </div>
@@ -67,8 +70,8 @@ const Travelica = () => {
                         >
                             Your browser does not support the video tag.
                         </video> */}
-                        <img src="/images/travelica-vid-2.webp" alt="" className='travelica-img' />
-                        <img src="/images/travelica-vid-3.webp" alt="" className='travelica-img' />
+                        <img src="/images/laptops/5/1.png" alt="" className='travelica-img' />
+                        <img src="/images/laptops/5/2.png" alt="" className='travelica-img' />
                     </div>
 
                     <div className="grid lg:grid-cols-5 grid-cols-1 gap-8 lg:mb-28 mb-16">
@@ -77,27 +80,30 @@ const Travelica = () => {
                         </div>
                         <div className='lg:col-span-3'>
                             <p className='text-xl text-white mb-5'>
-                               Travelica was designed to solve this problem by creating a clean, modern interface that's not only visually inspiring but also deeply user-centric. The aim was to give users full control over how they discover destinations, organize itineraries, and manage travel details—all within a single, intuitive platform. From the very first screen, the experience encourages exploration while reducing the friction often associated with travel planning.
+                               The goal of Torkbiz was to create a unified platform that redefines how businesses approach consulting and performance management. Instead of relying on fragmented tools and manual processes, Torkbiz centralizes data, strategy, and insights into a single, easy-to-navigate system.
+                            </p>
+                            <p className='text-xl text-white mb-5'>
+                               By combining professional consulting methodologies with modern technology, the software ensures leaders can analyze key metrics, forecast outcomes, and execute strategies with precision. Torkbiz was designed not just to advise—but to empower businesses to act.
                             </p>
                         </div>
                     </div>
 
                     <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-10 gap-6">
                         <div>
-                            <img src="/images/the-goal-mob.webp" alt="" />
+                            <img className='mt-20 mb-20 rounded-2xl' src="/images/laptops/5/3.png" alt="" />
                             <p className='text-3xl text-white'>
-                                Many travel apps offer generic suggestions and lack personalization. The goal was to create a sleek, intuitive interface that feels inspiring and gives users control over how they discover and organize their trips.
+                             Unlike traditional consulting systems that focus on static analysis, Torkbiz offers a dynamic environment for continuous improvement—enabling smarter decisions, streamlined operations, and stronger performance at every level.
                             </p>
                         </div>
                         <div className="grid grid-flow-row lg:gap-10 gap-6">
-                            <img src="/images/goal-2.webp" alt="" className='travelica-img' />
-                            <img src="/images/goal-3.webp" alt="" className='travelica-img' />
+                            <img src="/images/laptops/5/4.png" alt="" className='travelica-img' />
+                            <img src="/images/laptops/5/5.png" alt="" className='travelica-img' />
                         </div>
                     </div>
 
                     <div className='lg:py-28 py-16'>
                         <h3 className='text-center text-5xl uppercase font-semibold font-space-grotesk text-white lg:mb-28 mb-16'>
-                            Ensuring trust in the TRaveling world
+                            Transforming insights into intelligent business growth.
                         </h3>
                         {/* <video
                             src="/images/travelica-vid-4.mp4"
@@ -112,9 +118,10 @@ const Travelica = () => {
                     </div>
                 </div>
             </div>
-             <Footer />
+            <Footer />
         </div>
+       
     )
 }
 
-export default Travelica
+export default Torkbiz  

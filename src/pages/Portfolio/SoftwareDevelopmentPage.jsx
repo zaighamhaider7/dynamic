@@ -18,49 +18,49 @@ const SoftwareDevelopmentPage = () => {
             img: '/images/laptops/1/Front of Software.png',
             title: 'Sello – Case Study',
             description: "Discover how Sello empowers businesses to monitor sales, manage payouts, and track performance across custom timeframes—all through a single, intuitive dashboard designed for precision and growth.",
-            link: '/digital-marketing-case-study'
+            link: '/software-archieves/Sello'
         },
         {
             img: '/images/laptops/2/Front of Software.png',
             title: 'Friday – Case Study',
             description: "Discover how Friday transforms project management by integrating planning, execution, and tracking into one intelligent workspace—empowering teams to collaborate efficiently and deliver results with confidence.",
-            link: '/digital-marketing-case-study'
+            link: '/software-archieves/Friday'
         },
         {
             img: '/images/laptops/3/Front of Software.png',
             title: 'Mamsek – Case Study',
             description: "Explore how Mamsek empowers restaurants to manage operations effortlessly—from reservations to revenue tracking—all within a single, intelligent platform.",
-            link: '/digital-marketing-case-study'
+            link: '/software-archieves/Mamsek'
         },
         {
             img: '/images/laptops/4/Front of Software.png',
             title: 'Benefits – Case Study',
             description: "Discover how Benefits helps brands grow faster by transforming raw data into actionable intelligence. From conversion tracking to performance analytics, it empowers marketing teams to measure success and maximize ROI with confidence.",
-            link: '/digital-marketing-case-study'
+            link: '/software-archieves/Benefits'
         },
         {
             img: '/images/laptops/5/Front of Software.png',
             title: 'Torkbiz – Case Study',
             description: "See how Torkbiz transforms complex business challenges into strategic opportunities through smart consulting tools, financial intelligence, and operational excellence.",
-            link: '/digital-marketing-case-study'
+            link: '/software-archieves/Torkbiz'
         },
         {
             img: '/images/laptops/6/Front of Software.png',
             title: 'Bemax – Case Study',
             description: "Discover how Bemax bridges the gap between digital transformation and investment strategy—helping advisors and investors make confident, data-backed decisions in an ever-evolving digital landscape.",
-            link: '/digital-marketing-case-study'
+            link: '/software-archieves/Bemax'
         },
         {
             img: '/images/laptops/7/Front of Software.png',
             title: 'Insight Pro – Case Study',
             description: "Explore how Insight Pro revolutionizes the way consultants operate—integrating scheduling, communication, analytics, and reporting into one streamlined platform that enhances both client experience and business performance.",
-            link: '/digital-marketing-case-study'
+            link: '/software-archieves/InsightPro'
         },
         {
             img: '/images/laptops/8/Front of Software.png',
             title: 'Xisaas – Case Study',
             description: "Discover how Xisaas empowers businesses to streamline operations, manage devices, and monitor customer relationship activities through a single, data-driven control center.",
-            link: '/digital-marketing-case-study'
+            link: '/software-archieves/Xisaas'
         },
     ]
 
@@ -81,7 +81,7 @@ const SoftwareDevelopmentPage = () => {
                     <div className="grid md:grid-cols-2 grid-cols-1 md:gap-16 gap-10">
                         {data.map((item, index) => (
                             <div key={index} className='px-5'>
-                                <Link to="/mob-archieves/travelica" className='software-development-card-sub'>
+                                <Link to={item.link} className='software-development-card-sub'>
                                     <div className='software-development-card-sub'>
                                         <img src={item.img} alt={item.title} className='w-full h-full object-cover' />
                                         <div className='software-development-card-content text-center'>

@@ -3,13 +3,13 @@ import Navbar from '../../components/Generic/Navbar'
 import ServiceHeader from '../../components/Services/ServiceHeader'
 import Footer from '../../components/Generic/Footer'
 
-const Travelica = () => {
+const InsightPro  = () => {
 
     const Headdata = {
         pill: "Our Work",
-        titleOrange: "TRAVELICA",
+        titleOrange: "INSIGHT PRO",
         title: "MOBILE APP",
-        description: "Explore new destinations with ease. Travelica helps users build custom itineraries, discover hidden gems, and get real-time travel updates—making every journey smooth, safe, and unforgettable."
+        description: "Unlock smarter decision-making with Insight Pro—a modern consultation management platform that empowers professionals to deliver expert guidance, manage clients efficiently, and build lasting trust through data-driven insights."
     }
 
     return (
@@ -33,14 +33,14 @@ const Travelica = () => {
                             Our Top Rated Designs
                         </div>
                         <h2 className='text-5xl font-semibold text-white'>
-                            Travelica – Case Study
+                           Insight Pro – Case Study
                         </h2>
                         <p className="text-gray-800">
-                            Dive into real-world examples of how we've helped brands boost visibility, drive conversions, and scale with confidence.
+                           Explore how Insight Pro revolutionizes the way consultants operate—integrating scheduling, communication, analytics, and reporting into one streamlined platform that enhances both client experience and business performance.
                         </p>
                     </div>
 
-                    <img src='/images/appsPortfolio/Travel App/Travel Banner.jpeg' className='w-full mt-20 mb-20 rounded-2xl' />
+                    <img src='/images/laptops/7/6.png' className='w-full mt-20 mb-20 rounded-2xl' />
 
                     <div className="grid lg:grid-cols-5 grid-cols-1 gap-8">
                         <div className='lg:col-span-2'>
@@ -48,10 +48,13 @@ const Travelica = () => {
                         </div>
                         <div className='lg:col-span-3'>
                             <p className='text-xl text-white mb-5'>
-                                Travelica is a thoughtfully designed mobile app concept aimed at simplifying the way people plan their travels. In a world full of overwhelming options and scattered resources, Travelica brings everything into one place—allowing users to discover exciting destinations, craft personalized itineraries, and receive timely updates for a smooth and stress-free journey.
+                                Insight Pro is a comprehensive consultation software designed to simplify the way professionals manage client relationships, deliver insights, and monitor outcomes. Built for consultants, coaches, and advisory teams, it centralizes scheduling, documentation, and communication—ensuring a seamless consultation process from start to finish.
                             </p>
                             <p className='text-xl text-white'>
-                               Whether it's a weekend getaway or a month-long adventure, Travelica helps users make smarter travel choices with confidence. The app focuses on providing a visually immersive experience paired with intuitive navigation, ensuring users feel inspired and in control from the very first tap.
+                              The platform enables consultants to store session histories, track performance metrics, and generate actionable reports—all in a secure and user-friendly environment. With its intuitive dashboard and intelligent tools, Insight Pro helps professionals focus on what matters most: delivering real value and measurable results to their clients.
+                            </p>
+                            <p className='text-xl text-white mt-5'>
+                                Whether for business strategy, legal advice, financial planning, or personal coaching, Insight Pro adapts to every consultation model with precision and ease.
                             </p>
                         </div>
                     </div>
@@ -67,8 +70,8 @@ const Travelica = () => {
                         >
                             Your browser does not support the video tag.
                         </video> */}
-                        <img src="/images/travelica-vid-2.webp" alt="" className='travelica-img' />
-                        <img src="/images/travelica-vid-3.webp" alt="" className='travelica-img' />
+                        <img src="/images/laptops/7/1.png" alt="" className='travelica-img' />
+                        <img src="/images/laptops/7/2.png" alt="" className='travelica-img' />
                     </div>
 
                     <div className="grid lg:grid-cols-5 grid-cols-1 gap-8 lg:mb-28 mb-16">
@@ -77,27 +80,30 @@ const Travelica = () => {
                         </div>
                         <div className='lg:col-span-3'>
                             <p className='text-xl text-white mb-5'>
-                               Travelica was designed to solve this problem by creating a clean, modern interface that's not only visually inspiring but also deeply user-centric. The aim was to give users full control over how they discover destinations, organize itineraries, and manage travel details—all within a single, intuitive platform. From the very first screen, the experience encourages exploration while reducing the friction often associated with travel planning.
+                              The goal of Insight Pro was to create a system that transforms traditional consultation into a dynamic, data-backed experience. Instead of relying on fragmented tools and manual tracking, Insight Pro brings everything together—client management, communication, and performance analysis—in one efficient solution.
+                            </p>
+                            <p className='text-xl text-white mb-5'>
+                               By merging professional expertise with digital intelligence, Insight Pro empowers consultants to enhance their productivity, streamline operations, and deliver consistent value across every engagement.
                             </p>
                         </div>
                     </div>
 
                     <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-10 gap-6">
                         <div>
-                            <img src="/images/the-goal-mob.webp" alt="" />
+                            <img className='mt-20 mb-20 rounded-2xl' src="/images/laptops/7/3.png" alt="" />
                             <p className='text-3xl text-white'>
-                                Many travel apps offer generic suggestions and lack personalization. The goal was to create a sleek, intuitive interface that feels inspiring and gives users control over how they discover and organize their trips.
+                                Unlike generic scheduling or CRM tools, Insight Pro is purpose-built for consultants—offering a complete framework to manage clients, sessions, and insights with professionalism and precision.
                             </p>
                         </div>
                         <div className="grid grid-flow-row lg:gap-10 gap-6">
-                            <img src="/images/goal-2.webp" alt="" className='travelica-img' />
-                            <img src="/images/goal-3.webp" alt="" className='travelica-img' />
+                            <img src="/images/laptops/7/4.png" alt="" className='travelica-img' />
+                            <img src="/images/laptops/7/5.png" alt="" className='travelica-img' />
                         </div>
                     </div>
 
                     <div className='lg:py-28 py-16'>
                         <h3 className='text-center text-5xl uppercase font-semibold font-space-grotesk text-white lg:mb-28 mb-16'>
-                            Ensuring trust in the TRaveling world
+                            Elevating consultation through clarity, connection, and insight.
                         </h3>
                         {/* <video
                             src="/images/travelica-vid-4.mp4"
@@ -112,9 +118,10 @@ const Travelica = () => {
                     </div>
                 </div>
             </div>
-             <Footer />
+            <Footer />
         </div>
+       
     )
 }
 
-export default Travelica
+export default InsightPro   

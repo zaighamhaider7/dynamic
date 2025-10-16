@@ -39,42 +39,43 @@ const MobileApps = () => {
     const prevSlide = () => {
         sliderRef.current?.slickPrev()
     }
+    
     const data = [
         {
             img: '/images/appsPortfolio/Travel App/Travel Guide Tourism App.png',
             title: 'Travelica – Case Study',
             description: "Dive into real-world examples of how we've helped brands boost visibility, drive conversions, and scale with confidence.",
-            link: '/digital-marketing-case-study'
+            link: '/mob-archieves/travelica'
         },
         {
             img: '/images/appsPortfolio/Salon App/Beauty Salon App.png',
             title: 'Salona – Case Study',
             description: "Explore how Salona redefines convenience and trust in the beauty industry by helping users find, book, and enjoy salon services effortlessly while empowering salons to grow their client base with confidence.",
-            link: '/digital-marketing-case-study'
+            link: '/mob-archieves/salona'
         },
         {
             img: '/images/appsPortfolio/Gadget App/Gadget Electronic App.png',
             title: 'Equidget – Case Study',
             description: "Learn how Equidget streamlines the digital shopping experience for electronics lovers, helping users find the latest tech, compare options instantly, and shop confidently—all within a beautifully intuitive app.",
-            link: '/digital-marketing-case-study'
+            link: '/mob-archieves/equidget'
         },
         {
             img: '/images/appsPortfolio/To do Task App/To Do Task Manager App.png',
             title: 'Organizo – Case Study',
             description: "Discover how Organizo transforms everyday task management by helping individuals and teams streamline goals, stay focused, and achieve more—without sacrificing balance or clarity.",
-            link: '/digital-marketing-case-study'
+            link: '/mob-archieves/Organizo'
         },
         {
             img: '/images/appsPortfolio/Fashion App/Fashion-Clothing-App.png',
             title: 'Fashiona – Case Study',
             description: "See how Fashiona transforms digital fashion retail by blending trend discovery with seamless eCommerce, giving users a personalized and inspiring way to shop for what suits them best.",
-            link: '/digital-marketing-case-study'
+            link: '/mob-archieves/Fashiona'
         },
         {
             img: '/images/appsPortfolio/Insurance App/Insurance App.png',
             title: 'ZOV – Case Study',
             description: "Explore how ZOV is reshaping the insurance experience by bringing clarity, accessibility, and confidence to users who want full control over their protection—anytime, anywhere.",
-            link: '/digital-marketing-case-study'
+            link: '/mob-archieves/Zov'
         },
     ]
 
@@ -112,7 +113,7 @@ const MobileApps = () => {
                     <Slider ref={sliderRef} {...settings}>
                         {data.map((item, index) => (
                             <div key={index} className='px-5'>
-                                <Link to="/mob-archieves/travelica" className='mobile-app-card-sub'>
+                                <Link to={item.link} className='mobile-app-card-sub'>
                                     <div className='mobile-app-card'>
                                         <img src={item.img} alt={item.title} className='w-full h-full object-cover' />
                                         <div className='mobile-app-card-content'>

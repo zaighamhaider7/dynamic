@@ -3,13 +3,13 @@ import Navbar from '../../components/Generic/Navbar'
 import ServiceHeader from '../../components/Services/ServiceHeader'
 import Footer from '../../components/Generic/Footer'
 
-const Travelica = () => {
+const Sello = () => {
 
     const Headdata = {
         pill: "Our Work",
-        titleOrange: "TRAVELICA",
+        titleOrange: "SELLO",
         title: "MOBILE APP",
-        description: "Explore new destinations with ease. Travelica helps users build custom itineraries, discover hidden gems, and get real-time travel updates—making every journey smooth, safe, and unforgettable."
+        description: "Manage your business with clarity and control. Sello is an all-in-one sales dashboard that provides real-time insights, performance tracking, and seamless communication—helping sellers stay informed and in command."
     }
 
     return (
@@ -33,14 +33,14 @@ const Travelica = () => {
                             Our Top Rated Designs
                         </div>
                         <h2 className='text-5xl font-semibold text-white'>
-                            Travelica – Case Study
+                           Sello – Case Study
                         </h2>
                         <p className="text-gray-800">
-                            Dive into real-world examples of how we've helped brands boost visibility, drive conversions, and scale with confidence.
+                           Discover how Sello empowers businesses to monitor sales, manage payouts, and track performance across custom timeframes—all through a single, intuitive dashboard designed for precision and growth.
                         </p>
                     </div>
 
-                    <img src='/images/appsPortfolio/Travel App/Travel Banner.jpeg' className='w-full mt-20 mb-20 rounded-2xl' />
+                    <img src='/images/laptops/1/LAPTOP MOCKUP6.png' className='w-full mt-20 mb-20 rounded-2xl' />
 
                     <div className="grid lg:grid-cols-5 grid-cols-1 gap-8">
                         <div className='lg:col-span-2'>
@@ -48,10 +48,13 @@ const Travelica = () => {
                         </div>
                         <div className='lg:col-span-3'>
                             <p className='text-xl text-white mb-5'>
-                                Travelica is a thoughtfully designed mobile app concept aimed at simplifying the way people plan their travels. In a world full of overwhelming options and scattered resources, Travelica brings everything into one place—allowing users to discover exciting destinations, craft personalized itineraries, and receive timely updates for a smooth and stress-free journey.
+                                Sello is a comprehensive desktop software concept designed to simplify how sellers analyze, manage, and optimize their business performance. With multiple platforms and complex data sources, understanding sales trends can often become overwhelming. Sello solves this by consolidating everything into one smart, data-driven dashboard.
                             </p>
                             <p className='text-xl text-white'>
-                               Whether it's a weekend getaway or a month-long adventure, Travelica helps users make smarter travel choices with confidence. The app focuses on providing a visually immersive experience paired with intuitive navigation, ensuring users feel inspired and in control from the very first tap.
+                               The platform allows users to view daily, weekly, monthly, and custom sales analytics, monitor product performance, and track payouts in real time. It also includes integrated messaging and overview features that help users stay connected and make quick, informed decisions.
+                            </p>
+                            <p className='text-xl text-white mt-5'>
+                                By combining advanced analytics with a clean and modern interface, Sello transforms sales monitoring into an engaging, efficient experience.
                             </p>
                         </div>
                     </div>
@@ -67,8 +70,8 @@ const Travelica = () => {
                         >
                             Your browser does not support the video tag.
                         </video> */}
-                        <img src="/images/travelica-vid-2.webp" alt="" className='travelica-img' />
-                        <img src="/images/travelica-vid-3.webp" alt="" className='travelica-img' />
+                        <img src="/images/laptops/1/LAPTOP MOCKUP2.png" alt="" className='travelica-img' />
+                        <img src="/images/laptops/1/LAPTOP MOCKUP4.png" alt="" className='travelica-img' />
                     </div>
 
                     <div className="grid lg:grid-cols-5 grid-cols-1 gap-8 lg:mb-28 mb-16">
@@ -77,27 +80,30 @@ const Travelica = () => {
                         </div>
                         <div className='lg:col-span-3'>
                             <p className='text-xl text-white mb-5'>
-                               Travelica was designed to solve this problem by creating a clean, modern interface that's not only visually inspiring but also deeply user-centric. The aim was to give users full control over how they discover destinations, organize itineraries, and manage travel details—all within a single, intuitive platform. From the very first screen, the experience encourages exploration while reducing the friction often associated with travel planning.
+                               The goal of Sello was to create a modern, insight-driven tool that turns complex data into clarity. The mission centered on designing a dashboard that’s not only powerful but also easy to navigate—allowing users to visualize performance, respond to messages, and manage payouts effortlessly.
+                            </p>
+                            <p className='text-xl text-white mb-5'>
+                               Each feature was crafted to improve visibility, enhance productivity, and simplify workflow, giving sellers full control over their operations from one centralized platform.
                             </p>
                         </div>
                     </div>
 
                     <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-10 gap-6">
                         <div>
-                            <img src="/images/the-goal-mob.webp" alt="" />
+                            <img className='mt-20 mb-20 rounded-2xl' src="/images/laptops/1/LAPTOP MOCKUP5.png" alt="" />
                             <p className='text-3xl text-white'>
-                                Many travel apps offer generic suggestions and lack personalization. The goal was to create a sleek, intuitive interface that feels inspiring and gives users control over how they discover and organize their trips.
+                                While most sales dashboards focus solely on numbers, Sello focuses on understanding. It brings together insights, communication, and analytics in a way that helps users make confident decisions, streamline operations, and grow with data-backed precision.
                             </p>
                         </div>
                         <div className="grid grid-flow-row lg:gap-10 gap-6">
-                            <img src="/images/goal-2.webp" alt="" className='travelica-img' />
-                            <img src="/images/goal-3.webp" alt="" className='travelica-img' />
+                            <img src="/images/laptops/1/LAPTOP MOCKUP3.png" alt="" className='travelica-img' />
+                            <img src="/images/laptops/1/LAPTOP MOCKUP1.png" alt="" className='travelica-img' />
                         </div>
                     </div>
 
                     <div className='lg:py-28 py-16'>
                         <h3 className='text-center text-5xl uppercase font-semibold font-space-grotesk text-white lg:mb-28 mb-16'>
-                            Ensuring trust in the TRaveling world
+                            Empowering sellers through data, design, and simplicity.
                         </h3>
                         {/* <video
                             src="/images/travelica-vid-4.mp4"
@@ -112,9 +118,10 @@ const Travelica = () => {
                     </div>
                 </div>
             </div>
-             <Footer />
+            <Footer />
         </div>
+       
     )
 }
 
-export default Travelica
+export default Sello 
