@@ -62,7 +62,7 @@ const TrustedBy = () => {
                         <img src="/images/flower-white.svg" alt="" className="flwr-white" />
                         See The WizSpeed Clients
                     </div>
-                    <h2 className="head-h2">
+                    <h2 className="head-h2 text-[20px] sm:text-[60px]">
                         Trusted by <span className="text-orange">Customers</span>
                     </h2>
                     <p className="text-gray-900 text-center">

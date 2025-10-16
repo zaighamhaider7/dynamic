@@ -220,7 +220,7 @@ const RecentWork = () => {
                         <img src="/images/flower-white.svg" alt="" className="flwr-white" />
                         Recent Work
                     </div>
-                    <h2 className="head-h2">
+                    <h2 className="head-h2 text-[20px] sm:text-[60px]">
                         Transformations That <span className="text-orange">Speak for Themselves</span>
                     </h2>
                     <p className="text-gray-900 text-center max-w-[710px] mx-auto">

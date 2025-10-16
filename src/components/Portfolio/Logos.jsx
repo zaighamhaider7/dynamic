@@ -33,7 +33,7 @@ const Logos = () => {
                         <img src="/images/flower-white.svg" alt="" className="flwr-white" />
                         Let Professionals Design Your Logo
                     </div>
-                    <h2 className="head-h2">
+                    <h2 className="head-h2 text-[20px] sm:text-[60px]">
                         Stand Out with a <span className="text-orange">Unique Logo</span>
                     </h2>
                     <p className="text-gray-900 text-center">

@@ -111,7 +111,7 @@ const CaseStudies = () => {
                         <img src="/images/flower-white.svg" alt="" className="flwr-white" />
                         Our Top Rated Designs
                     </div>
-                    <h2 className="head-h2">
+                    <h2 className="head-h2 text-[20px] sm:text-[60px]">
                         digital marketing <span className="text-orange">case studies</span>
                     </h2>
                     <p className="text-gray-900 text-center">

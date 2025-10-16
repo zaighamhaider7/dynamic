@@ -87,7 +87,7 @@ const MobileApps = () => {
                         <img src="/images/flower-white.svg" alt="" className="flwr-white" />
                         Mobile App
                     </div>
-                    <h2 className="head-h2">
+                    <h2 className="head-h2 text-[20px] sm:text-[60px]">
                         Transforming Ideas into Seamless <span className="text-orange">Mobile Experiences</span>
                     </h2>
                     <p className="text-gray-900 text-center max-w-[710px] mx-auto">

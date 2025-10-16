@@ -87,7 +87,7 @@ const SoftwareDevelopment = () => {
                         <img src="/images/flower-white.svg" alt="" className="flwr-white" />
                         Software Development
                     </div>
-                    <h2 className="head-h2 text-[20px] sm:text-[18px]">
+                    <h2 className="head-h2 text-[20px] sm:text-[60px]">
                         End-to-End Software Development Excellence marketing <span className="text-orange">case studies</span>
                     </h2>
                     <p className="text-gray-900 text-center max-w-[710px] mx-auto">
