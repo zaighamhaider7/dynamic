@@ -18,37 +18,37 @@ const DigitalMarketingPage = () => {
     const data = [
         {
             img: '/images/case studies/xpress.jpeg',
-            title: 'Website Development',
+            title: 'Digital Marketing',
             description: "Xpress Pro Labs",
             link: '/digital-marketing-case-study'
         },
         {
             img: '/images/case studies/spot.jpeg',
-            title: 'Website Development',
+            title: 'Digital Marketing',
             description: "Spotlimo",
             link: '/digital-marketing-case-study'
         },
         {
             img: '/images/case studies/scott.jpeg',
-            title: 'Website Development',
+            title: 'Digital Marketing',
             description: "Scott Soderstrom",
             link: '/digital-marketing-case-study'
         },
         {
             img: '/images/case studies/mcc.jpeg',
-            title: 'Website Development',
+            title: 'Digital Marketing',
             description: "Middleton-CC",
             link: '/digital-marketing-case-study'
         },
         {
             img: '/images/case studies/dtr.jpeg',
-            title: 'Website Development',
+            title: 'Digital Marketing',
             description: "Dtr-Company",
             link: '/digital-marketing-case-study'
         },
         {
             img: '/images/case studies/bzlap.jpeg',
-            title: 'Website Development',
+            title: 'Digital Marketing',
             description: "Bzlap",
             link: '/digital-marketing-case-study'
         },
@@ -106,10 +106,10 @@ const DigitalMarketingPage = () => {
                     }}
                   />
                   <div className="case-study-card-content">
-                    <h3 className="text-brand-orange font-space-grotesk text-[30px] lg:mt-7 lg:mb-5 mt-5 mb-3 leading-[100%] text-center">
+                    <h3 className="text-brand-orange font-space-grotesk text-lg lg:mt-7 lg:mb-5 mt-5 mb-3 leading-[100%] text-center">
                       {item.title}
                     </h3>
-                    <p className="text-[16px] font-light leading-[22px] text-white/90 text-center">
+                    <p className="fw-thin tracking-wide text-[14px] text-gray-500 text-center">
                       {item.description}
                     </p>
                   </div>
