@@ -100,7 +100,7 @@ const AboutUsCard = ({ data, isFirst = false, index }) => {
     }
   }, [index]);
   return (
-    <div className={`abt-card`}>
+    <div className={`abt-card overflow-hidden`}>
       <h3>{data?.title}</h3>
       <p>{data?.description}</p>
       {isFirst ? (
@@ -174,7 +174,7 @@ const AboutUsCard = ({ data, isFirst = false, index }) => {
         <div className="relative w-full max-w-[560px] aspect-[16/10] sm:aspect-[16/9] md:aspect-[16/8] mt-5 mx-auto">
 
           {/* Central speaker image - Made even bigger */}
-          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-52 h-60 sm:w-56 sm:h-64 md:w-60 md:h-68">
+          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-52 h-60 sm:w-56 sm:h-64 md:w-60 md:h-68 ">
             <img
               className="w-full h-full object-contain"
               src="/images/speaker-image.svg"
@@ -352,7 +352,7 @@ const AboutUsCard = ({ data, isFirst = false, index }) => {
         </div>
       ) : index === 3 ? (
         // Customer Support card (4th card) with speaker and customer images
-        <div className="relative w-full max-w-[560px] aspect-[16/10] sm:aspect-[16/9] md:aspect-[16/8] mt-5 mx-auto">
+        <div className=" relative w-full max-w-[560px] aspect-[16/10] sm:aspect-[16/9] md:aspect-[16/8] mt-5 mx-auto">
 
           {/* Central speaker image - Made even bigger */}
           <div className="absolute left-1/2 top-24 -translate-x-1/2 -translate-y-1/2 w-52 h-60 sm:w-56 sm:h-64 md:w-60 md:h-68">

@@ -97,8 +97,8 @@ const MobileAppsPage = () => {
                                     <Link to={item.link} className='mobile-app-card-sub'>
                                         <img src={item.img} alt={item.title} className='w-full h-full object-cover' />
                                         <div className='mobile-app-card-content text-center'>
-                                            <h3 className='text-brand-orange text-center font-space-grotesk text-lg lg:mt-7 lg:mb-5 mt-5 mb-3 leading-[100%]'>{item.title}</h3>
-                                            <p className='fw-thin tracking-wide text-[14px] text-gray-500 text-center'>{item.description}</p>
+                                            <h3 className='text-brand-orange text-center font-space-grotesk text-[30px] lg:mt-7 lg:mb-5 mt-5 mb-3 leading-[100%]'>{item.title}</h3>
+                                            <p className='text-[16px] font-light leading-[22px] text-white/90 text-center'>{item.description}</p>
                                             {/* <a href={item.link} className='btn-white'>
                             View Case Study
                         </a> */}
