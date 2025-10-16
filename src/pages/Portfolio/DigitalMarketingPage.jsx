@@ -15,41 +15,41 @@ const DigitalMarketingPage = () => {
       "Feeling invisible online? A well-designed website gets you noticed and builds trust and credibility. See how we’ve transformed businesses with growth-driven website designs. ",
   }
 
-   const data = [
+    const data = [
         {
             img: '/images/case studies/xpress.jpeg',
-            title: 'Infinite REI Group',
-            description: "Let's inspire the future with a Home Selling",
+            title: 'Website Development',
+            description: "Xpress Pro Labs",
             link: '/digital-marketing-case-study'
         },
         {
             img: '/images/case studies/spot.jpeg',
-            title: 'Prince House',
-            description: "Let' us Find Your Dream Home",
+            title: 'Website Development',
+            description: "Spotlimo",
             link: '/digital-marketing-case-study'
         },
         {
             img: '/images/case studies/scott.jpeg',
-            title: '8 min away',
-            description: "Delicious Food at your Door Step",
+            title: 'Website Development',
+            description: "Scott Soderstrom",
             link: '/digital-marketing-case-study'
         },
         {
             img: '/images/case studies/mcc.jpeg',
-            title: 'The Art of Living',
-            description: "A Home for the Soul",
+            title: 'Website Development',
+            description: "Middleton-CC",
             link: '/digital-marketing-case-study'
         },
         {
             img: '/images/case studies/dtr.jpeg',
-            title: 'Infinite REI Group',
-            description: "Let's inspire the future with a Home Selling",
+            title: 'Website Development',
+            description: "Dtr-Company",
             link: '/digital-marketing-case-study'
         },
         {
             img: '/images/case studies/bzlap.jpeg',
-            title: '8 min away',
-            description: "Delicious Food at your Door Step",
+            title: 'Website Development',
+            description: "Bzlap",
             link: '/digital-marketing-case-study'
         },
     ]
