@@ -27,21 +27,16 @@ const modalStyle = {
 
 const marks = [
     { value: 2000, label: '2000' },
-    { value: 10000, label: '10,000' },
     { value: 20000, label: '20,000' },
-    { value: 30000, label: '30,000' },
     { value: 40000, label: '40,000' },
-    { value: 50000, label: '50,000' },
     { value: 60000, label: '60,000' },
-    { value: 70000, label: '70,000' },
     { value: 80000, label: '80,000' },
-    { value: 90000, label: '90,000' },
     { value: 100000, label: '100,000' },
 ];
 
 
 export default function ContactUsModal({ open, onClose }) {
-    const [budget, setBudget] = useState(30000);
+    const [budget, setBudget] = useState(2000);
     const [hasWebsite, setHasWebsite] = useState('yes');
 
     return (
@@ -136,6 +131,7 @@ export default function ContactUsModal({ open, onClose }) {
                                     '& .MuiSlider-valueLabel': {
                                         top: '60px',
                                         backgroundColor: '#FC5E14',
+                                        fontSize:12,
                                         color: 'white',
                                         fontWeight: 'bold',
                                         borderRadius: '4px',
@@ -181,23 +177,24 @@ export default function ContactUsModal({ open, onClose }) {
                                     },
                                     '& .MuiSlider-markLabel': {
                                         position: 'absolute',
-                                        top: -48,
+                                        top: -46,
                                         left: '50%',
                                         transform: 'translateX(-50%)',
-                                        minWidth: 70,
+                                        minWidth: 30,
                                         textAlign: 'center',
                                         fontWeight: 600,
-                                        fontSize: 16,
                                         px: 1.5,
                                         py: 0.5,
                                         borderRadius: 2,
                                         bgcolor: '#232323',
+                                        fontSize:12,
                                         color: '#9C9C9C',
                                         boxShadow: '0 2px 8px rgba(0,0,0,0.12)',
                                         transition: 'all 0.2s',
                                         '&.MuiSlider-markLabelActive': {
                                             bgcolor: '#fff',
                                             color: '#FC5E14',
+                                            fontSize:12,
                                             boxShadow: '0 2px 8px rgba(0,0,0,0.18)',
                                         },
                                         '&:after': {
@@ -237,14 +234,14 @@ export default function ContactUsModal({ open, onClose }) {
                             <a href="tel:+13127965599" className='right-a'>
                                 +1 312 796 5599
                             </a>
-                            <a href="mailto:Contact@wizspeed.us" className='right-a uppercase'>
-                                Contact@wizspeed.us
+                            <a href="mailto:contact@wizspeed.com" className='right-a uppercase !text-[18px] sm:!text-[30px]'>
+                                contact@wizspeed.com
                             </a>
                             <p className="mt-3">
                                 5250 old archard rd, Suite #300, Skakie 11, 60077
                             </p>
                         </div>
-                        <div className="img-cont">
+                        <div className="img-cont  hidden sm:block">
                             <img src="/images/modal-image.webp" alt="" />
                         </div>
                     </div>

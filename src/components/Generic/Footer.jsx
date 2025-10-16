@@ -89,7 +89,7 @@ const Footer = () => {
                             <div className="flex items-center space-x-2">
                                 <FaEnvelope />
                                 <a href="mailto:abc123@gmail.com" className="footer-link">
-                                    abc123@gmail.com
+                                    contact@wizspeed.com
                                 </a>
                             </div>
                             <form onSubmit={handleEmailSubmit} className="footer-form">

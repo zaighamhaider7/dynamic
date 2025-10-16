@@ -168,7 +168,7 @@ const Navbar = () => {
                             </li>
                             <li className="nav-item dropdown">
                                 <a href="#" className={`nav-link dropdown-toggle ${isActive('/service') || isActive('/digital-marketing') || isActive('/mob-archieves') || isActive('/software-development') ? 'active' : ''}`}>
-                                    Services
+                                    Services 
                                     <FaChevronDown />
                                 </a>
                                 <div className="dropdown-menu">
@@ -258,7 +258,7 @@ const Navbar = () => {
                         className={`mobile-nav-link ${isActive('/service') || isActive('/digital-marketing') || isActive('/mob-archieves') || isActive('/software-development') ? 'active' : ''}`}
                         onClick={toggleMobileServices}
                     >
-                        Services <i className={`fas fa-chevron-down ${isMobileServicesOpen ? 'rotate' : ''}`}></i>
+                        Services <FaChevronDown />
                     </button>
 
                     {isMobileServicesOpen && (
@@ -284,7 +284,7 @@ const Navbar = () => {
                                 onClick={() => handleMobileServiceToggle(category)}
                                 >
                                 {readableTitle}
-                                <i className={`fas fa-chevron-down transition-transform duration-200 ${isOpen ? 'rotate' : ''}`}></i>
+                                    <FaChevronDown />
                                 </button>
 
                                 {isOpen && (

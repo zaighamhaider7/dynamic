@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const ShowCase = () => {
     return (
@@ -18,100 +19,114 @@ const ShowCase = () => {
                     </p>
                 </div>
 
-                <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 lg:my-16 my-10 min-h-[600px]">
+                <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:my-16 my-10 min-h-[600px] gap-3 sm:gap-3 md:gap-4 lg:gap-5">
                     <div className='grid lg:grid-flow-col lg:grid-rows-2 lg:grid-cols-none grid-cols-2 gap-5'>
                         <div className='recent-work-card'>
-                            <img src='/images/portfolio/img-5-rec.jpg' alt="" className='aspect-auto h-full' />
-                            <div className="recent-content">
-                                <span>
-                                    <img src="/images/flower-white.svg" alt="" className="flwr-white" />
-                                   <a target='_blank' href="https://xpressprolabs.com/"> Xpress Pro Labs</a>
-                                </span>
-                                <h4 >
-                                    Laboratory health
-                                </h4>
-                            </div>
+                             <Link to='https://xpressprolabs.com/' className='recent-work-card' >
+                                <img src='/images/portfolio/img-5-rec.jpg' alt="" className='aspect-auto h-full !rounded-2xl !sm:rounded-sm lg:rounded-2xl' />
+                                <div className="recent-content">
+                                    <span>
+                                        <img src="/images/flower-white.svg" alt="" className="flwr-white" />
+                                        Xpress Pro Labs
+                                    </span>
+                                    <h4 >
+                                        Laboratory health
+                                    </h4>
+                                </div>
+                            </Link>
                         </div>
                         <div className='recent-work-card' >
-                            <img src='/images/portfolio/img-6-rec.jpg' alt="" className='aspect-auto h-full' />
-                            <div className="recent-content">
-                                <span>
-                                    <img src="/images/flower-white.svg" alt="" className="flwr-white" />
-                                    Dtr-Company
-                                </span>
-                                <h4>
-                                   <a target='_blank' href="https://preview.dtr-company.com/"> Construction</a> 
-                                </h4>
-                            </div>
+                            <Link to='https://preview.dtr-company.com/' className='recent-work-card' >
+                                <img src='/images/portfolio/img-6-rec.jpg' alt="" className='aspect-auto h-full !rounded-2xl !sm:rounded-sm lg:rounded-2xl' />
+                                <div className="recent-content">
+                                    <span>
+                                        <img src="/images/flower-white.svg" alt="" className="flwr-white" />
+                                        Dtr-Company
+                                    </span>
+                                    <h4>
+                                        Construction
+                                    </h4>
+                                </div>
+                            </Link>
                         </div>
                     </div>
 
                     <div className=''>
                         <div className='recent-work-card h-full' >
-                            <img src='/images/portfolio/img-4-sqr.jpg' alt="" className='aspect-auto h-full' />
-                            <div className="recent-content">
-                                <span>
-                                    <img src="/images/flower-white.svg" alt="" className="flwr-white" />
-                                    <a target='_blank' href="https://middleton-cc.com/"> OEX Capital Pro</a>
-                                </span>
-                                <h4>
-                                    trading strategy
-                                </h4>
-                            </div>
+                             <Link to='https://oexcapitalpro.com/' className='recent-work-card' >
+                                <img src='/images/portfolio/img-4-sqr.jpg' alt="" className='aspect-auto h-full !rounded-2xl !sm:rounded-sm lg:rounded-2xl' />
+                                <div className="recent-content">
+                                    <span>
+                                        <img src="/images/flower-white.svg" alt="" className="flwr-white" />
+                                        OEX Capital Pro
+                                    </span>
+                                    <h4>
+                                        trading strategy
+                                    </h4>
+                                </div>
+                            </Link>
                         </div>
                     </div>
 
                     <div className='grid lg:grid-flow-col lg:grid-rows-5 lg:grid-cols-none grid-cols-2 gap-5'>
                         <div className='recent-work-card lg:row-span-2' >
-                            <img src='/images/portfolio/img-1-sqr.webp' alt="" className='aspect-auto h-full' />
-                            <div className="recent-content">
-                                <span>
-                                    <img src="/images/flower-white.svg" alt="" className="flwr-white" />
-                                     <a target='_blank' href="https://scottsoderstrom.com/"> Scott Soderstrom</a>
-                                </span>
-                                <h4>
-                                    Financial Advisor
-                                </h4>
-                            </div>
+                            <Link to='https://scottsoderstrom.com/' className='recent-work-card' >
+                                <img src='/images/portfolio/img-1-sqr.webp' alt="" className='aspect-auto h-full !rounded-2xl !sm:rounded-sm lg:rounded-2xl' />
+                                <div className="recent-content">
+                                    <span>
+                                        <img src="/images/flower-white.svg" alt="" className="flwr-white" />
+                                        Scott Soderstrom
+                                    </span>
+                                    <h4>
+                                        Financial Advisor
+                                    </h4>
+                                </div>
+                            </Link>
                         </div>
                         <div className='recent-work-card lg:row-span-3' >
-                            <img src='/images/portfolio/img-13-rec.jpg' alt="" className='aspect-auto h-full' />
-                            <div className="recent-content">
-                                <span>
-                                    <img src="/images/flower-white.svg" alt="" className="flwr-white" />
-                                    <a target='_blank' href="https://fundanyfilm.com/"> Fund Any Film</a>
-                                </span>
-                                <h4>
-                                    Media
-                                </h4>
-                            </div>
+                            <Link to='https://fundanyfilm.com/' className='recent-work-card' >
+                                <img src='/images/portfolio/img-13-rec.jpg' alt="" className='aspect-auto h-full !rounded-2xl !sm:rounded-sm lg:rounded-2xl' />
+                                <div className="recent-content">
+                                    <span>
+                                        <img src="/images/flower-white.svg" alt="" className="flwr-white" />
+                                         Fund Any Film
+                                    </span>
+                                    <h4>
+                                        Media
+                                    </h4>
+                                </div>
+                            </Link>
                         </div>
                     </div>
 
                     <div className='grid lg:grid-flow-col lg:grid-rows-5 lg:grid-cols-none grid-cols-2 gap-5'>
                         <div className='recent-work-card lg:row-span-3' >
-                            <img src='/images/portfolio/img-12-rec.jpg' alt="" className='aspect-auto h-full' />
-                            <div className="recent-content">
-                                <span>
-                                    <img src="/images/flower-white.svg" alt="" className="flwr-white" />
-                                    <a target='_blank' href="https://kennysmaintenance.com/"> Kennys Maintenance</a>
-                                </span>
-                                <h4>
-                                    Cleaning
-                                </h4>
-                            </div>
+                            <Link to='https://kennysmaintenance.com/' className='recent-work-card' >
+                                <img src='/images/portfolio/img-12-rec.jpg' alt="" className='aspect-auto h-full !rounded-2xl !sm:rounded-sm lg:rounded-2xl' />
+                                <div className="recent-content">
+                                    <span>
+                                        <img src="/images/flower-white.svg" alt="" className="flwr-white" />
+                                         Kennys Maintenance
+                                    </span>
+                                    <h4>
+                                        Cleaning
+                                    </h4>
+                                </div>
+                            </Link>
                         </div>
                         <div className='recent-work-card lg:row-span-2' >
-                            <img src='/images/portfolio/img-2-sqr.jpg' alt="" className='aspect-auto h-full' />
-                            <div className="recent-content">
-                                <span>
-                                    <img src="/images/flower-white.svg" alt="" className="flwr-white" />
-                                    <a target='_blank' href="http://ipiassoc.org/"> Ipiassoc</a>
-                                </span>
-                                <h4>
-                                    Plumbing
-                                </h4>
-                            </div>
+                            <Link to='http://ipiassoc.org/' className='recent-work-card' >
+                                <img src='/images/portfolio/img-2-sqr.jpg' alt="" className='aspect-auto h-full !rounded-2xl !sm:rounded-sm lg:rounded-2xl' />
+                                <div className="recent-content">
+                                    <span>
+                                        <img src="/images/flower-white.svg" alt="" className="flwr-white" />
+                                        Ipiassoc
+                                    </span>
+                                    <h4>
+                                        Plumbing
+                                    </h4>
+                                </div>
+                            </Link>
                         </div>
                     </div>
                 </div>

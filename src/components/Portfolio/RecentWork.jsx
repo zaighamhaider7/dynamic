@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
+
 
 const RecentWork = () => {
     const [isLargeScreen, setIsLargeScreen] = useState(false);
@@ -226,7 +228,7 @@ const RecentWork = () => {
                     </p>
                 </div>
 
-                <div className="grid gap-5 lg:mt-16 mt-10" style={{
+                <div className="grid gap-3 sm:gap-3 md:gap-4 lg:gap-5 lg:mt-16 mt-10" style={{
                     gridTemplateColumns: 'repeat(12, 1fr)',
                     gridAutoRows: 'auto'
                 }}>
@@ -263,6 +265,7 @@ const RecentWork = () => {
                             }
 
                             return (
+                                 
                                 <div
                                     className='recent-work-card grid-recent-work'
                                     key={index}
@@ -271,11 +274,12 @@ const RecentWork = () => {
                                         gridRow: `${row + 1} / span 1`
                                     }}
                                 >
-                                    <img src={work?.img} alt="" />
-                                    <div className="recent-content">
+                                    <Link to={work.link} className='recent-work-card ' >
+                                    <img src={work.img} alt={work?.title} className='!rounded-2xl !sm:rounded-sm lg:rounded-xl'  />
+                                    <div className="recent-content  ">
                                         <span>
                                             <img src="/images/flower-white.svg" alt="" className="flwr-white" />
-                                            <a target="_blank" href={work?.link}>{work?.title}</a>
+                                          {work?.title}
                                         </span>
                                         <h4>
                                             {
@@ -283,6 +287,7 @@ const RecentWork = () => {
                                             }
                                         </h4>
                                     </div>
+                                    </Link>
                                 </div>
                             )
                         })

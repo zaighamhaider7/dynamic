@@ -141,7 +141,11 @@ const ServiceTabs = ({
                         />
                     ) : currentTab?.video ? (
                     <div className={`relative ${!isEqualBox ? 'lg:col-span-3' : ''} lg:order-2 order-1`}>
-                        <div className="flex items-center justify-center w-full h-full min-h-[400px] lg:min-h-0 lg:h-full overflow-hidden rounded-lg shadow-2xl bg-black">
+                        {/* <div className="flex items-center justify-center w-full h-full min-h-[400px] lg:min-h-0 lg:h-full overflow-hidden rounded-lg shadow-2xl bg-black"> */}
+                        <div class="flex items-center justify-center w-full min-h-[200px] lg:min-h-[400px] bg-transparent shadow-none 
+                                     lg:min-h-0 lg:h-full 
+                                    lg:bg-black lg:shadow-2xl 
+                                    overflow-hidden rounded-lg">
                         <video
                             src={currentTab.video}
                             className="max-h-full max-w-full object-contain"

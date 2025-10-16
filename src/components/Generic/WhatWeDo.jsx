@@ -208,11 +208,11 @@ const WhatWeDo = () => {
                                 onMouseEnter={() => handleServiceHover(service?.id)}
                                 onMouseLeave={clearHoverTimer}
                             >
-                                <div className={`md:text-4xl text-2xl font-space-grotesk numb ${activeService === service.id ? 'text-white' : 'text-gray-900'}`}>
+                                <div className={`md:text-4xl text-[18px] font-space-grotesk numb ${activeService === service.id ? 'text-white' : 'text-gray-900'}`}>
                                     {String(index + 1).padStart(2, '0')}
                                 </div>
                                 <div className="flex-1">
-                                    <h3 className={`md:text-2xl lg:text-3xl xl:text-4xl text-xl flex items-center gap-2 font-space-grotesk serv-title ${activeService === service.id ? 'text-white' : 'text-gray-900'
+                                    <h3 className={`md:text-2xl lg:text-3xl xl:text-4xl text-[13px] flex items-center gap-2 font-space-grotesk serv-title ${activeService === service.id ? 'text-white' : 'text-gray-900'
                                         }`}>
                                         {service.name}
                                         <span className={`ml-4`}>
@@ -230,7 +230,7 @@ const WhatWeDo = () => {
                             <img
                                 src={currentImage}
                                 alt={currentTab.services.find(s => s.id === activeService)?.name || 'Service'}
-                                className="rounded-lg shadow-2xl max-w-full h-full transition-all duration-500"
+                                className="rounded-lg shadow-2xl max-w-full h-full transition-all duration-500 hidden sm:block"
                             />
                             <div className="absolute top-0 bottom-0 m-auto inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg max-h-[430px]"></div>
                         </div>
