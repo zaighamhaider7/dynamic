@@ -32,7 +32,7 @@ const Organizo = () => {
                             <img src="/images/flower-white.svg" alt="" className="flwr-white" />
                             Our Top Rated Designs
                         </div>
-                        <h2 className='text-5xl font-semibold text-white'>
+                        <h2 className='text-2xl sm:text-5xl font-semibold text-white'>
                            Organizo – Case Study
                         </h2>
                         <p className="text-gray-800">
@@ -44,13 +44,13 @@ const Organizo = () => {
 
                     <div className="grid lg:grid-cols-5 grid-cols-1 gap-8">
                         <div className='lg:col-span-2'>
-                            <h3 className='inner-head'>PROJECT OVERVIEW</h3>
+                            <h3 className='inner-head text-xl sm:text-[36px] leading-[10px] sm:leading-[50px]'>PROJECT OVERVIEW</h3>
                         </div>
                         <div className='lg:col-span-3'>
-                            <p className='text-xl text-white mb-5'>
+                            <p className='text-md sm:text-xl text-white mb-5'>
                               Organizo is a powerful mobile app concept crafted to simplify how users organize their personal and professional lives. In an era where multitasking and information overload are common, Organizo offers a structured yet flexible environment that combines to-do lists, calendars, reminders, and collaboration tools into one elegant solution.
                             </p>
-                            <p className='text-xl text-white'>
+                            <p className='text-md sm:text-xl text-white'>
                             The app empowers users to take control of their time—whether managing a work project, tracking personal goals, or scheduling family events. With its minimalist design, seamless sync, and intuitive flow, Organizo ensures users stay productive and focused without feeling overwhelmed.
                             </p>
                         </div>
@@ -73,13 +73,13 @@ const Organizo = () => {
 
                     <div className="grid lg:grid-cols-5 grid-cols-1 gap-8 lg:mb-28 mb-16">
                         <div className='lg:col-span-2 '>
-                            <h3 className='inner-head'>THE GOAL</h3>
+                            <h3 className='inner-head text-xl sm:text-[36px]'>THE GOAL</h3>
                         </div>
                         <div className='lg:col-span-3'>
-                            <p className='text-xl text-white mb-5'>
+                            <p className='text-md sm:text-xl text-white mb-5'>
                                The goal of Organizo was to create a modern productivity tool that blends functionality with simplicity. The design centers around clarity and usability—enabling users to prioritize tasks, set reminders, and visualize progress effortlessly.
                             </p>
-                            <p className='text-xl text-white mb-5'>
+                            <p className='text-md sm:text-xl text-white mb-5'>
                                By integrating personal and professional organization into a single platform, Organizo encourages users to achieve more with less stress, fostering both productivity and well-being through smart planning and thoughtful design.
                             </p>
                         </div>
@@ -88,7 +88,7 @@ const Organizo = () => {
                     <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-10 gap-6">
                         <div>
                             <img className='mt-20 mb-20 rounded-2xl' src="/images/appsPortfolio/To do Task App/to-do-task-5 Screen App/5.png" alt="" />
-                            <p className='text-3xl text-white'>
+                            <p className='text-md sm:text-3xl text-white'>
                              Most productivity apps focus solely on task lists or calendars. Organizo takes it further by merging time management with mindfulness, helping users maintain balance while achieving their goals. It’s not just about getting things done—it’s about getting them done with purpose and ease.
                             </p>
                         </div>
@@ -99,7 +99,7 @@ const Organizo = () => {
                     </div>
 
                     <div className='lg:py-28 py-16'>
-                        <h3 className='text-center text-5xl uppercase font-semibold font-space-grotesk text-white lg:mb-28 mb-16'>
+                        <h3 className='text-center text:xl sm:text-5xl uppercase font-semibold font-space-grotesk text-white lg:mb-28 mb-16'>
                             Redefining productivity through balance and simplicity.
                         </h3>
                         {/* <video

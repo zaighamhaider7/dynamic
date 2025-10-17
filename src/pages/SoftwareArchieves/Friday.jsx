@@ -8,7 +8,7 @@ const Friday = () => {
     const Headdata = {
         pill: "Our Work",
         titleOrange: "FRIDAY",
-        title: "MOBILE APP",
+        title: "SOFTWARE",
         description: "Plan smarter, work faster. Friday helps teams plan, execute, and track projects of any size—combining collaboration, automation, and clarity to keep every workflow on schedule and in sync."
     }
 
@@ -32,7 +32,7 @@ const Friday = () => {
                             <img src="/images/flower-white.svg" alt="" className="flwr-white" />
                             Our Top Rated Designs
                         </div>
-                        <h2 className='text-5xl font-semibold text-white'>
+                        <h2 className='text-2xl sm:text-5xl font-semibold text-white'>
                            Friday – Case Study
                         </h2>
                         <p className="text-gray-800">
@@ -44,16 +44,16 @@ const Friday = () => {
 
                     <div className="grid lg:grid-cols-5 grid-cols-1 gap-8">
                         <div className='lg:col-span-2'>
-                            <h3 className='inner-head'>PROJECT OVERVIEW</h3>
+                            <h3 className='inner-head text-xl sm:text-[36px] leading-[10px] sm:leading-[50px]'>PROJECT OVERVIEW</h3>
                         </div>
                         <div className='lg:col-span-3'>
-                            <p className='text-xl text-white mb-5'>
+                            <p className='text-md sm:text-xl text-white mb-5'>
                                 Friday is a powerful desktop software concept built to redefine how teams organize and complete projects. In fast-paced work environments where coordination is key, Friday serves as the central hub for planning, execution, and performance tracking.
                             </p>
-                            <p className='text-xl text-white'>
+                            <p className='text-md sm:text-xl text-white'>
                                The platform allows users to create structured project plans, assign tasks, automate repetitive processes, and monitor progress in real time. From small internal initiatives to large-scale operations, Friday adapts to any workflow—offering flexibility without sacrificing control.
                             </p>
-                            <p className='text-xl text-white mt-5'>
+                            <p className='text-md sm:text-xl text-white mt-5'>
                                 With its clean design, smart automation, and collaborative tools, Friday helps teams stay focused, aligned, and productive—no matter where they work from.
                             </p>
                         </div>
@@ -76,13 +76,13 @@ const Friday = () => {
 
                     <div className="grid lg:grid-cols-5 grid-cols-1 gap-8 lg:mb-28 mb-16">
                         <div className='lg:col-span-2 '>
-                            <h3 className='inner-head'>THE GOAL</h3>
+                            <h3 className='inner-head text-xl sm:text-[36px]'>THE GOAL</h3>
                         </div>
                         <div className='lg:col-span-3'>
-                            <p className='text-xl text-white mb-5'>
+                            <p className='text-md sm:text-xl text-white mb-5'>
                                The goal of Friday was to design an intelligent workspace that unites teams and simplifies project management. The mission was to eliminate scattered tools and create one central platform where everything—from ideas to execution—flows seamlessly.
                             </p>
-                            <p className='text-xl text-white mb-5'>
+                            <p className='text-md sm:text-xl text-white mb-5'>
                                Each feature was developed to enhance transparency, streamline communication, and boost accountability. Whether managing deadlines or automating updates, Friday ensures that every project moves forward efficiently and every team member stays on the same page.
                             </p>
                         </div>
@@ -91,7 +91,7 @@ const Friday = () => {
                     <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-10 gap-6">
                         <div>
                             <img className='mt-20 mb-20 rounded-2xl' src="/images/laptops/2/4.png" alt="" />
-                            <p className='text-3xl text-white'>
+                            <p className='text-md sm:text-3xl text-white'>
                                 While many project tools complicate workflows, Friday simplifies them. It bridges planning, collaboration, and automation—allowing teams to focus less on managing tasks and more on achieving goals.
                             </p>
                         </div>
@@ -102,7 +102,7 @@ const Friday = () => {
                     </div>
 
                     <div className='lg:py-28 py-16'>
-                        <h3 className='text-center text-5xl uppercase font-semibold font-space-grotesk text-white lg:mb-28 mb-16'>
+                        <h3 className='text-center text:xl sm:text-5xl uppercase font-semibold font-space-grotesk text-white lg:mb-28 mb-16'>
                             Turning every project into a productive success story.
                         </h3>
                         {/* <video

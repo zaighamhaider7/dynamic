@@ -32,7 +32,7 @@ const Zov = () => {
                             <img src="/images/flower-white.svg" alt="" className="flwr-white" />
                             Our Top Rated Designs
                         </div>
-                        <h2 className='text-5xl font-semibold text-white'>
+                        <h2 className='text-2xl sm:text-5xl font-semibold text-white'>
                            ZOV – Case Study
                         </h2>
                         <p className="text-gray-800">
@@ -44,13 +44,13 @@ const Zov = () => {
 
                     <div className="grid lg:grid-cols-5 grid-cols-1 gap-8">
                         <div className='lg:col-span-2'>
-                            <h3 className='inner-head'>PROJECT OVERVIEW</h3>
+                            <h3 className='inner-head text-xl sm:text-[36px] leading-[10px] sm:leading-[50px]'>PROJECT OVERVIEW</h3>
                         </div>
                         <div className='lg:col-span-3'>
-                            <p className='text-xl text-white mb-5'>
+                            <p className='text-md sm:text-xl text-white mb-5'>
                                 ZOV is a modern insurance app concept built to make managing policies and coverage simple, transparent, and stress-free. In a market often defined by complex paperwork and confusion, ZOV bridges the gap between insurers and users through a clean, digital-first experience.
                             </p>
-                            <p className='text-xl text-white'>
+                            <p className='text-md sm:text-xl text-white'>
                                 The app allows users to browse and compare multiple insurance options—from health and vehicle to property and travel—while offering instant policy tracking, renewal reminders, and secure digital document storage. Designed for both ease and trust, ZOV puts users in control of their coverage through a seamless and visually clear interface.
                             </p>
                         </div>
@@ -73,13 +73,13 @@ const Zov = () => {
 
                     <div className="grid lg:grid-cols-5 grid-cols-1 gap-8 lg:mb-28 mb-16">
                         <div className='lg:col-span-2 '>
-                            <h3 className='inner-head'>THE GOAL</h3>
+                            <h3 className='inner-head text-xl sm:text-[36px]'>THE GOAL</h3>
                         </div>
                         <div className='lg:col-span-3'>
-                            <p className='text-xl text-white mb-5'>
+                            <p className='text-md sm:text-xl text-white mb-5'>
                                The goal of ZOV was to redefine how people interact with insurance by focusing on clarity, accessibility, and confidence. The mission was to design an app that simplifies complex processes, helping users make informed decisions without confusion or delay.
                             </p>
-                            <p className='text-xl text-white mb-5'>
+                            <p className='text-md sm:text-xl text-white mb-5'>
                                From comparing policies to managing claims, every feature was crafted to remove friction and build trust—turning what used to be a tedious process into a smooth, intuitive experience.
                             </p>
                         </div>
@@ -88,7 +88,7 @@ const Zov = () => {
                     <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-10 gap-6">
                         <div>
                             <img className='mt-20 mb-20 rounded-2xl' src="/images/appsPortfolio/Insurance App/Insurance 5 Screen App/5.png" alt="" />
-                            <p className='text-3xl text-white'>
+                            <p className='text-md sm:text-3xl text-white'>
                                 While traditional insurance systems are often complicated and slow, ZOV prioritizes simplicity and user empowerment. It transforms the insurance journey into one that’s efficient, transparent, and accessible—helping users feel secure and supported every step of the way.
                             </p>
                         </div>
@@ -99,7 +99,7 @@ const Zov = () => {
                     </div>
 
                     <div className='lg:py-28 py-16'>
-                        <h3 className='text-center text-5xl uppercase font-semibold font-space-grotesk text-white lg:mb-28 mb-16'>
+                        <h3 className='text-center text:xl sm:text-5xl uppercase font-semibold font-space-grotesk text-white lg:mb-28 mb-16'>
                             Building trust and protection in a digital-first world.
                         </h3>
                         {/* <video

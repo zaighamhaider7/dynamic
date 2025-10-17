@@ -32,7 +32,7 @@ const TrueScope = () => {
                             <img src="/images/flower-white.svg" alt="" className="flwr-white" />
                             Our Top Rated Designs
                         </div>
-                        <h2 className='text-5xl font-semibold text-white'>
+                        <h2 className='text-2xl sm:text-5xl font-semibold text-white'>
                            TrueScope – Case Study
                         </h2>
                         <p className="text-gray-800">
@@ -44,16 +44,16 @@ const TrueScope = () => {
 
                     <div className="grid lg:grid-cols-5 grid-cols-1 gap-8">
                         <div className='lg:col-span-2'>
-                            <h3 className='inner-head'>PROJECT OVERVIEW</h3>
+                            <h3 className='inner-head text-xl sm:text-[36px] leading-[10px] sm:leading-[50px]'>PROJECT OVERVIEW</h3>
                         </div>
                         <div className='lg:col-span-3'>
-                            <p className='text-xl text-white mb-5'>
+                            <p className='text-md sm:text-xl text-white mb-5'>
                                 TrueScope is a modern news app concept designed to redefine how people consume information in a fast-paced digital world. With misinformation and content overload becoming common challenges, TrueScope offers a clean, reliable, and organized way to stay updated.
                             </p>
-                            <p className='text-xl text-white'>
+                            <p className='text-md sm:text-xl text-white'>
                                 The app curates stories from verified sources across politics, technology, entertainment, business, and global affairs—presented through a sleek, distraction-free interface. Users can personalize their feeds, set topic alerts, and explore in-depth coverage designed to build understanding rather than confusion.
                             </p>
-                            <p className='text-xl text-white mt-5'>
+                            <p className='text-md sm:text-xl text-white mt-5'>
                                 By combining smart algorithms with editorial integrity, TrueScope ensures every user receives accurate, relevant, and timely news that fits their interests and values.
                             </p>
                         </div>
@@ -76,13 +76,13 @@ const TrueScope = () => {
 
                     <div className="grid lg:grid-cols-5 grid-cols-1 gap-8 lg:mb-28 mb-16">
                         <div className='lg:col-span-2 '>
-                            <h3 className='inner-head'>THE GOAL</h3>
+                            <h3 className='inner-head text-xl sm:text-[36px]'>THE GOAL</h3>
                         </div>
                         <div className='lg:col-span-3'>
-                            <p className='text-xl text-white mb-5'>
+                            <p className='text-md sm:text-xl text-white mb-5'>
                                The goal of TrueScope was to create a transparent, user-first news experience that prioritizes authenticity and clarity. The design focuses on simplicity and trust—allowing readers to explore stories confidently, free from bias and clutter.
                             </p>
-                            <p className='text-xl text-white mb-5'>
+                            <p className='text-md sm:text-xl text-white mb-5'>
                                From live headlines to deep analyses, TrueScope was built to deliver information that informs, educates, and inspires, while maintaining a seamless, modern user experience across every device.
                             </p>
                         </div>
@@ -91,7 +91,7 @@ const TrueScope = () => {
                     <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-10 gap-6">
                         <div>
                             <img className='mt-20 mb-20 rounded-2xl' src="/images/appsPortfolio/News App/News 5 Screen App/5.png" alt="" />
-                            <p className='text-3xl text-white'>
+                            <p className='text-md sm:text-3xl text-white'>
                                 While many news apps chase speed and clicks, TrueScope values truth, depth, and design. It’s a space for informed minds—helping users cut through misinformation and focus on credible stories that shape the world.
                             </p>
                         </div>
@@ -102,7 +102,7 @@ const TrueScope = () => {
                     </div>
 
                     <div className='lg:py-28 py-16'>
-                        <h3 className='text-center text-5xl uppercase font-semibold font-space-grotesk text-white lg:mb-28 mb-16'>
+                        <h3 className='text-center text:xl sm:text-5xl uppercase font-semibold font-space-grotesk text-white lg:mb-28 mb-16'>
                             Empowering truth through clarity and design.
                         </h3>
                         {/* <video

@@ -8,7 +8,7 @@ const Xisaas  = () => {
     const Headdata = {
         pill: "Our Work",
         titleOrange: "XISAAS",
-        title: "MOBILE APP",
+        title: "SOFTWARE",
         description: "Take full control of your digital ecosystem with Xisaas—a powerful QCRM and device management platform that centralizes activity tracking, performance monitoring, and operational control in one intelligent dashboard."
     }
 
@@ -32,7 +32,7 @@ const Xisaas  = () => {
                             <img src="/images/flower-white.svg" alt="" className="flwr-white" />
                             Our Top Rated Designs
                         </div>
-                        <h2 className='text-5xl font-semibold text-white'>
+                        <h2 className='text-2xl sm:text-5xl font-semibold text-white'>
                            Xisaas – Case Study
                         </h2>
                         <p className="text-gray-800">
@@ -44,16 +44,16 @@ const Xisaas  = () => {
 
                     <div className="grid lg:grid-cols-5 grid-cols-1 gap-8">
                         <div className='lg:col-span-2'>
-                            <h3 className='inner-head'>PROJECT OVERVIEW</h3>
-                        </div>
+                            <h3 className='inner-head text-xl sm:text-[36px] leading-[10px] sm:leading-[50px]'>PROJECT OVERVIEW</h3>
+                        </div> 
                         <div className='lg:col-span-3'>
-                            <p className='text-xl text-white mb-5'>
+                            <p className='text-md sm:text-xl text-white mb-5'>
                                 Xisaas is an advanced SaaS-based desktop application designed to unify device management and CRM activity tracking within a single, efficient platform. Built for organizations managing multiple systems and customer interactions, Xisaas provides a seamless way to oversee performance, automate reporting, and enhance productivity.
                             </p>
-                            <p className='text-xl text-white'>
+                            <p className='text-md sm:text-xl text-white'>
                               With its intuitive QCRM Activity Dashboard, users can visualize real-time data, monitor device health, track operational metrics, and manage workflows effortlessly. The software bridges the gap between technical control and customer management—helping teams stay proactive, secure, and organized.
                             </p>
-                            <p className='text-xl text-white mt-5'>
+                            <p className='text-md sm:text-xl text-white mt-5'>
                                 Whether managing internal infrastructure or client-facing operations, Xisaas ensures every process is transparent, efficient, and data-backed.
                             </p>
                         </div>
@@ -76,13 +76,13 @@ const Xisaas  = () => {
 
                     <div className="grid lg:grid-cols-5 grid-cols-1 gap-8 lg:mb-28 mb-16">
                         <div className='lg:col-span-2 '>
-                            <h3 className='inner-head'>THE GOAL</h3>
+                            <h3 className='inner-head text-xl sm:text-[36px]'>THE GOAL</h3>
                         </div>
                         <div className='lg:col-span-3'>
-                            <p className='text-xl text-white mb-5'>
+                            <p className='text-md sm:text-xl text-white mb-5'>
                               The goal of Xisaas was to create a unified command center for business technology and CRM operations. Instead of switching between disconnected tools, Xisaas integrates device oversight, activity monitoring, and customer management into one streamlined system.
                             </p>
-                            <p className='text-xl text-white mb-5'>
+                            <p className='text-md sm:text-xl text-white mb-5'>
                                Its design focuses on visibility, automation, and precision—allowing teams to monitor performance, identify inefficiencies, and take quick action when needed. Xisaas transforms operational complexity into clarity, empowering users to stay in full control of their digital environment.
                             </p>
                         </div>
@@ -91,7 +91,7 @@ const Xisaas  = () => {
                     <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-10 gap-6">
                         <div>
                             <img className='mt-20 mb-20 rounded-2xl' src="/images/laptops/8/3.png" alt="" />
-                            <p className='text-3xl text-white'>
+                            <p className='text-md sm:text-3xl text-white'>
                                 While most platforms focus on either CRM or device management, Xisaas combines both—creating a smarter, more efficient way to oversee technology and customer operations side by side.
                             </p>
                         </div>
@@ -102,7 +102,7 @@ const Xisaas  = () => {
                     </div>
 
                     <div className='lg:py-28 py-16'>
-                        <h3 className='text-center text-5xl uppercase font-semibold font-space-grotesk text-white lg:mb-28 mb-16'>
+                        <h3 className='text-center text:xl sm:text-5xl uppercase font-semibold font-space-grotesk text-white lg:mb-28 mb-16'>
                             Total control, total insight—powered by Xisaas.
                         </h3>
                         {/* <video

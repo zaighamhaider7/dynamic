@@ -32,7 +32,7 @@ const Equidget = () => {
                             <img src="/images/flower-white.svg" alt="" className="flwr-white" />
                             Our Top Rated Designs
                         </div>
-                        <h2 className='text-5xl font-semibold text-white'>
+                        <h2 className='text-2xl sm:text-5xl font-semibold text-white'>
                            Equidget – Case Study
                         </h2>
                         <p className="text-gray-800">
@@ -44,13 +44,13 @@ const Equidget = () => {
 
                     <div className="grid lg:grid-cols-5 grid-cols-1 gap-8">
                         <div className='lg:col-span-2'>
-                            <h3 className='inner-head'>PROJECT OVERVIEW</h3>
+                            <h3 className='inner-head text-xl sm:text-[36px] leading-[10px] sm:leading-[50px]'>PROJECT OVERVIEW</h3>
                         </div>
                         <div className='lg:col-span-3'>
-                            <p className='text-xl text-white mb-5'>
+                            <p className='text-md sm:text-xl text-white mb-5'>
                               Equidget is a thoughtfully developed mobile app concept that unifies the world of electronics into one easy-to-navigate platform. In a market overflowing with scattered listings and inconsistent pricing, Equidget simplifies discovery by providing verified products, clear categories, and real-time availability.
                             </p>
-                            <p className='text-xl text-white'>
+                            <p className='text-md sm:text-xl text-white'>
                             Whether a user is upgrading a smartphone, exploring new gadgets, or outfitting their home with smart tech, Equidget delivers a curated, reliable, and efficient experience. The app combines clean design with powerful functionality, allowing users to browse, compare, and purchase products effortlessly.
                             </p>
                         </div>
@@ -73,13 +73,13 @@ const Equidget = () => {
 
                     <div className="grid lg:grid-cols-5 grid-cols-1 gap-8 lg:mb-28 mb-16">
                         <div className='lg:col-span-2 '>
-                            <h3 className='inner-head'>THE GOAL</h3>
+                            <h3 className='inner-head text-xl sm:text-[36px]'>THE GOAL</h3>
                         </div>
                         <div className='lg:col-span-3'>
-                            <p className='text-xl text-white mb-5'>
+                            <p className='text-md sm:text-xl text-white mb-5'>
                                The goal of Equidget was to create a trusted digital environment where technology feels approachable, not overwhelming. The mission was to design a visually modern and user-centric interface that allows users to explore electronics confidently, supported by verified reviews, transparent pricing, and secure checkout.
                             </p>
-                            <p className='text-xl text-white mb-5'>
+                            <p className='text-md sm:text-xl text-white mb-5'>
                                From first tap to final purchase, the focus remained on building a journey that’s fast, clear, and satisfying—bridging the gap between tech enthusiasts and quality products.
                             </p>
                         </div>
@@ -88,7 +88,7 @@ const Equidget = () => {
                     <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-10 gap-6">
                         <div>
                             <img className='mt-20 mb-20 rounded-2xl' src="/images/appsPortfolio/Gadget App/Gadget 5 Screen Apps/5.png" alt="" />
-                            <p className='text-3xl text-white'>
+                            <p className='text-md sm:text-3xl text-white'>
                              While many e-commerce apps focus on quantity, Equidget emphasizes quality, clarity, and confidence. The app empowers users to discover and shop smarter—offering all electronics in one organized, easy-to-use platform that reflects trust and innovation.
                             </p>
                         </div>
@@ -99,7 +99,7 @@ const Equidget = () => {
                     </div>
 
                     <div className='lg:py-28 py-16'>
-                        <h3 className='text-center text-5xl uppercase font-semibold font-space-grotesk text-white lg:mb-28 mb-16'>
+                        <h3 className='text-center text:xl sm:text-5xl uppercase font-semibold font-space-grotesk text-white lg:mb-28 mb-16'>
                             Empowering smarter choices in the digital world.
                         </h3>
                         {/* <video

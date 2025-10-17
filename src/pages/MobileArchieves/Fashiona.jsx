@@ -32,7 +32,7 @@ const Fashiona = () => {
                             <img src="/images/flower-white.svg" alt="" className="flwr-white" />
                             Our Top Rated Designs
                         </div>
-                        <h2 className='text-5xl font-semibold text-white'>
+                        <h2 className='text-2xl sm:text-5xl font-semibold text-white'>
                            Fashiona – Case Study
                         </h2>
                         <p className="text-gray-800">
@@ -44,13 +44,13 @@ const Fashiona = () => {
 
                     <div className="grid lg:grid-cols-5 grid-cols-1 gap-8">
                         <div className='lg:col-span-2'>
-                            <h3 className='inner-head'>PROJECT OVERVIEW</h3>
+                            <h3 className='inner-head text-xl sm:text-[36px] leading-[10px] sm:leading-[50px]'>PROJECT OVERVIEW</h3>
                         </div>
                         <div className='lg:col-span-3'>
-                            <p className='text-xl text-white mb-5'>
+                            <p className='text-md sm:text-xl text-white mb-5'>
                                 Fashiona is an elegantly crafted mobile app concept designed to revolutionize how people explore and shop for fashion. In a space filled with countless brands and overwhelming choices, Fashiona simplifies the experience by combining curated collections, style recommendations, and secure shopping into one intuitive platform.
                             </p>
-                            <p className='text-xl text-white'>
+                            <p className='text-md sm:text-xl text-white'>
                                 From clothing and accessories to exclusive designer drops, the app provides users with a sleek and immersive experience. Fashiona celebrates individuality—empowering users to express their personal style through a well-organized, visually stunning interface that feels both luxurious and easy to use.
                             </p>
                         </div>
@@ -73,13 +73,13 @@ const Fashiona = () => {
 
                     <div className="grid lg:grid-cols-5 grid-cols-1 gap-8 lg:mb-28 mb-16">
                         <div className='lg:col-span-2 '>
-                            <h3 className='inner-head'>THE GOAL</h3>
+                            <h3 className='inner-head text-xl sm:text-[36px]'>THE GOAL</h3>
                         </div>
                         <div className='lg:col-span-3'>
-                            <p className='text-xl text-white mb-5'>
+                            <p className='text-md sm:text-xl text-white mb-5'>
                                The goal behind Fashiona was to create a modern fashion platform that merges aesthetics with functionality. The app was designed to deliver a premium browsing and shopping experience—one where users can discover trends, explore styles, and make confident purchases, all within a visually captivating environment.
                             </p>
-                            <p className='text-xl text-white mb-5'>
+                            <p className='text-md sm:text-xl text-white mb-5'>
                                Every interaction, from viewing product details to completing a purchase, was refined to feel effortless and enjoyable. Fashiona aims to build trust, excitement, and connection between users and the fashion they love.
                             </p>
                         </div>
@@ -88,7 +88,7 @@ const Fashiona = () => {
                     <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-10 gap-6">
                         <div>
                             <img className='mt-20 mb-20 rounded-2xl' src="/images/appsPortfolio/Fashion App/Fashion 5 Screen App/5.png" alt="" />
-                            <p className='text-3xl text-white'>
+                            <p className='text-md sm:text-3xl text-white'>
                                 While many fashion apps focus solely on catalog listings, Fashiona focuses on experience. It blends inspiration, personalization, and convenience—helping users discover new trends, shop their favorites, and express their style with confidence.
                             </p>
                         </div>
@@ -99,7 +99,7 @@ const Fashiona = () => {
                     </div>
 
                     <div className='lg:py-28 py-16'>
-                        <h3 className='text-center text-5xl uppercase font-semibold font-space-grotesk text-white lg:mb-28 mb-16'>
+                        <h3 className='text-center text-xl sm:text-5xl uppercase font-semibold font-space-grotesk text-white lg:mb-28 mb-16'>
                             Inspiring confidence through every look and design.
                         </h3>
                         {/* <video
