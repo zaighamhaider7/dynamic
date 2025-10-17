@@ -8,7 +8,7 @@ import { FaArrowLeftLong, FaArrowRightLong, FaXmark } from 'react-icons/fa6'
 
 const DigitalMarketingPage = () => {
   const Headdata = {
-    pill: "Our Work 2",
+    pill: "Our Work",
     titleOrange: "DIGITAL",
     title: "MARKETING",
     description:
