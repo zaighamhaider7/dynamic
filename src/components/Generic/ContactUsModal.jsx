@@ -72,34 +72,35 @@ export default function ContactUsModal({ open, onClose }) {
                         </p>
                         <div className="grid grid-cols-2 gap-5 mt-10 mb-7">
                             <label htmlFor="" className='col-span-2'>
-                                <input type="text" placeholder='Name' />
+                                <input type="text" name='name' placeholder='Name' />
                             </label>
                             <label htmlFor="">
-                                <input type="text" placeholder='Email' />
+                                <input type="text" name='email' placeholder='Email' />
                             </label>
                             <label htmlFor="">
-                                <input type="text" placeholder='Phone Number' />
+                                <input type="text" name='phone_number' placeholder='Phone Number' />
                             </label>
 
                             <label htmlFor="">
-                                <input type="text" placeholder='Company Name' />
+                                <input type="text" name='company_name' placeholder='Company Name' />
                             </label>
-                            <select name="" id="">
-                                <option value="">Select Service</option>
-                                <option value="">Web Development</option>
-                                <option value="">App Development</option>
-                                <option value="">SEO</option>
+                            <select name="service" id="">
+                                <option value="" selected hidden>Select Service</option>
+                                <option value="Web Development">Web Development</option>
+                                <option value="App Development">App Development</option>
+                                <option value="Software Development">Software Development</option>
+                                <option value="Digital Marketing">Digital Marketing</option>
                             </select>
                         </div>
                         <p>Do You Currently Have a Website You'll Be Upgrading*</p>
 
                         <div className="flex gap-5 my-5">
                             <label htmlFor="" className='flex gap-2 items-center'>
-                                <input type="radio" placeholder='Budget' />
+                                <input type="radio" name='yes' placeholder='Budget' />
                                 <span>Yes</span>
                             </label>
                             <label htmlFor="" className='flex gap-2 items-center'>
-                                <input type="radio" placeholder='Budget' />
+                                <input type="radio" name='no' placeholder='Budget' />
                                 <span>No</span>
                             </label>
                         </div>
@@ -251,7 +252,6 @@ export default function ContactUsModal({ open, onClose }) {
                         <FaArrowsAlt />
                     </span>
                     <div className='flex-1'>
-
                         SUBMIT
                     </div>
                 </button>
