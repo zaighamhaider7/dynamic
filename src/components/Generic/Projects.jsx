@@ -91,7 +91,10 @@ const Projects = ({
                                     <img src='/images/headerUser-4.webp' />
                                 </div>
                             )}
-                            <button className="view-all-btn w-fit">View All Projects</button>
+                            {/* <button className="view-all-btn w-fit">View All Projects</button> */}
+                            <a href="/portfolio/our-portfolio" className="view-all-btn w-fit">
+                                View All Projects
+                            </a>
                         </div>
                     </div>
 
@@ -118,10 +121,10 @@ const Projects = ({
 
                         {/* Slider */}
                         <Slider key={windowWidth} ref={sliderRef} {...sliderSettings} >
-                            {data?.map((project) => (
+                            {data?.map((work) => (
                                <div id='bc'>
-                                 <div key={project.id} className="project-slide px-2" >
-                                    <ProjectCard project={project} />
+                                 <div key={work.id} className="project-slide px-2" >
+                                    <ProjectCard work={work} />
                                 </div>
                                </div>
                             ))}

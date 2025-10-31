@@ -1,10 +1,23 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
+const BASE_URL = 'http://localhost/materially-free-react-admin-template-1.0.0/materially-free-react-admin-template-1.0.0/api/website/';
+
+
 
 const RecentWork = () => {
     const [isLargeScreen, setIsLargeScreen] = useState(false);
     const [isXLargeScreen, setIsXLargeScreen] = useState(false);
+    const [recentWork, setRecentWork] = useState([]);
+
+    useEffect(() => {
+        fetch(`${BASE_URL}/getRecentWork.php`)
+        .then(res => res.json())
+        .then(data => {
+            if (Array.isArray(data)) setRecentWork(data);
+        })
+        .catch(console.error);
+    }, []);
 
     useEffect(() => {
         const checkScreenSize = () => {
@@ -17,200 +30,200 @@ const RecentWork = () => {
         return () => window.removeEventListener('resize', checkScreenSize);
     }, []);
 
-    const recentWork = [
-        {
-            img: '/images/portfolio/img-1-sqr.webp',
-            tag: 'Financial Advisor',
-            title: 'Scott Soderstrom',
-            link: 'https://scottsoderstrom.com/'
-        },
-        {
-            img: '/images/portfolio/img-2-sqr.jpg',
-            tag: 'Plumbing',
-            title: 'Ipiassoc',
-            link: 'http://ipiassoc.org/'
-        },
-        {
-            img: '/images/portfolio/img-3-sqr.jpg',
-            tag: 'Commercial',
-            title: 'Shaides Glass Tinting',
-            link: 'https://shaidesprofessionalglasstinting.com/'
-        },
-        {
-            img: '/images/portfolio/img-4-sqr.jpg',
-            tag: 'trading strategy',
-            title: 'OEX Capital Pro',
-            link:'https://oexcapitalpro.com/'
-        },
-        {
-            img: '/images/portfolio/img-5-rec.jpg',
-            tag: 'Laboratory health',
-            title: 'Xpress Pro Labs',
-            link:'https://xpressprolabs.com/'
-        },
-        {
-            img: '/images/portfolio/img-6-rec.jpg',
-            tag: 'Construction',
-            title: 'Dtr-Company',
-            link:'https://preview.dtr-company.com/'
-        },
-        {
-            img: '/images/portfolio/img-7-rec.jpg',
-            tag: 'Middleton-CC',
-            title: 'Middleton-CC',
-            link:'https://middleton-cc.com/'
-        },
-        {
-            img: '/images/portfolio/img-8-sqr.jpg',
-            tag: 'House Buyers',
-            title: 'Infinite Rei Group',
-            link: 'https://preview.infinitereigroup.com/'
-        },
-        {
-            img: '/images/portfolio/img-9-sqr.jpg',
-            tag: 'Patricks Pet Salon',
-            title: 'Pet Salon',
-            link:'https://patrickspetsalon.com/'
-        },
-        {
-            img: '/images/portfolio/img-10-sqr.jpg',
-            tag: 'Clothing',
-            title: 'Elanfurs',
-            link:'https://elanfurs.com/'
-        },
-        {
-            img: '/images/portfolio/img-11-sqr.jpg',
-            tag: 'Online Store',
-            title: 'Suf Products',
-            link:'https://www.sufproducts.com/'
-        },
-        {
-            img: '/images/portfolio/img-12-rec.jpg',
-            tag: 'Cleaning',
-            title: 'Kennys Maintenance',
-            link:'https://kennysmaintenance.com/'
-        },
-        {
-            img: '/images/portfolio/img-13-rec.jpg',
-            tag: 'Media',
-            title: 'Fund Any Film',
-            link:'https://fundanyfilm.com/'
-        },
-        {
-            img: '/images/portfolio/img-14-rec.jpg',
-            tag: 'Modeling & Fashion',
-            title: 'Sinkwide',
-            link:'https://sinkwide.com/'
-        },
-        {
-            img: '/images/portfolio/img-15-sqr.jpg',
-            tag: 'Fitness',
-            title: 'Bzlap',
-            link:'https://bzlap.com/'
-        },
-        {
-            img: '/images/portfolio/img-16-sqr.jpg',
-            tag: 'Auto Accessories',
-            title: 'Windi Limo',
-            link:'https://windilimo.com/'
-        },
-        {
-            img: '/images/portfolio/img-17-sqr.jpg',
-            tag: 'Coffee House',
-            title: 'Windy City Limo',
-            link:'https://windycitylimo.net/'
-        },
-        {
-            img: '/images/portfolio/img-18-sqr.jpg',
-            tag: 'Automotive club',
-            title: 'Black Carbros',
-            link:'https://blackcarbros.com/'
-        },
-        {
-            img: '/images/portfolio/img-19-rec.jpg',
-            tag: 'Financial Advisor',
-            title: 'Munshisaab ',
-            link:'https://munshisaab.com/'
-        },
-        {
-            img: '/images/portfolio/img-20-rec.jpg',
-            tag: 'Digital Agency',
-            title: 'Sale Wizz',
-            link:'https://salewizz.com/#home'
-        },
-        {
-            img: '/images/portfolio/img-21-rec.jpg',
-            tag: 'Luxurious Product store',
-            title: 'Pakpre',
-            link:'https://pakpre.com/'
-        },
-        {
-            img: '/images/portfolio/img-22-sqr.jpg',
-            tag: 'Model & AD Agency',
-            title: 'Alice Photography',
-            link:'https://alice-photography.com/'
-        },
-        {
-            img: '/images/portfolio/img-23-sqr.jpg',
-            tag: 'Event Organization',
-            title: 'Vidzze ',
-            link:'https://vidzze.com/'
-        },
-        {
-            img: '/images/portfolio/img-24-sqr.jpg',
-            tag: 'Construction',
-            title: 'Kochwan',
-            link:'https://kochwan.com/'
-        },
-        {
-            img: '/images/portfolio/img-25-sqr.jpg',
-            tag: 'Digital Agency',
-            title: 'Bzlad',
-            link:'https://bzlad.com/#home-banner'
-        },
-        {
-            img: '/images/portfolio/img-26-rec.jpg',
-            tag: 'Digital Agency',
-            title: 'Alpa Technologies',
-            link:'https://alpatechnologies.com/'
-        },
-        {
-            img: '/images/portfolio/img-27-rec.jpg',
-            tag: 'Real Estate Agency',
-            title: 'Prince House',
-            link:'https://princehouse.net/'
-        },
-        {
-            img: '/images/portfolio/img-28-rec.jpg',
-            tag: 'Delicious Food',
-            title: 'Min 8 Away',
-            link:'https://min8away.com/'
-        },
-        {
-            img: '/images/portfolio/img-29-sqr.jpg',
-            tag: 'Weeding  Invitation',
-            title: 'Kistan',
-            link:'https://kistan.co/'
-        },
-        {
-            img: '/images/portfolio/img-30-sqr.jpg',
-            tag: 'digital Agency',
-            title: 'JJ Designs ',
-            link:'https://jamesjerrydesigns.com/'
-        },
-        {
-            img: '/images/portfolio/img-31-sqr.jpg',
-            tag: 'Logistics',
-            title: 'Upsidelinks',
-            link:'https://upsidelinks.com/'
-        },
-        {
-            img: '/images/portfolio/img-32-sqr.jpg',
-            tag: 'Luxurious Cars',
-            title: 'Spotlimo ',
-            link:'https://www.spotlimo.com/'
-        },
-    ]
+    // const recentWork = [
+    //     {
+    //         img: '/images/portfolio/img-1-sqr.webp',
+    //         tag: 'Financial Advisor',
+    //         title: 'Scott Soderstrom',
+    //         link: 'https://scottsoderstrom.com/'
+    //     },
+    //     {
+    //         img: '/images/portfolio/img-2-sqr.jpg',
+    //         tag: 'Plumbing',
+    //         title: 'Ipiassoc',
+    //         link: 'http://ipiassoc.org/'
+    //     },
+    //     {
+    //         img: '/images/portfolio/img-3-sqr.jpg',
+    //         tag: 'Commercial',
+    //         title: 'Shaides Glass Tinting',
+    //         link: 'https://shaidesprofessionalglasstinting.com/'
+    //     },
+    //     {
+    //         img: '/images/portfolio/img-4-sqr.jpg',
+    //         tag: 'trading strategy',
+    //         title: 'OEX Capital Pro',
+    //         link:'https://oexcapitalpro.com/'
+    //     },
+    //     {
+    //         img: '/images/portfolio/img-5-rec.jpg',
+    //         tag: 'Laboratory health',
+    //         title: 'Xpress Pro Labs',
+    //         link:'https://xpressprolabs.com/'
+    //     },
+    //     {
+    //         img: '/images/portfolio/img-6-rec.jpg',
+    //         tag: 'Construction',
+    //         title: 'Dtr-Company',
+    //         link:'https://preview.dtr-company.com/'
+    //     },
+    //     {
+    //         img: '/images/portfolio/img-7-rec.jpg',
+    //         tag: 'Middleton-CC',
+    //         title: 'Middleton-CC',
+    //         link:'https://middleton-cc.com/'
+    //     },
+    //     {
+    //         img: '/images/portfolio/img-8-sqr.jpg',
+    //         tag: 'House Buyers',
+    //         title: 'Infinite Rei Group',
+    //         link: 'https://preview.infinitereigroup.com/'
+    //     },
+    //     {
+    //         img: '/images/portfolio/img-9-sqr.jpg',
+    //         tag: 'Patricks Pet Salon',
+    //         title: 'Pet Salon',
+    //         link:'https://patrickspetsalon.com/'
+    //     },
+    //     {
+    //         img: '/images/portfolio/img-10-sqr.jpg',
+    //         tag: 'Clothing',
+    //         title: 'Elanfurs',
+    //         link:'https://elanfurs.com/'
+    //     },
+    //     {
+    //         img: '/images/portfolio/img-11-sqr.jpg',
+    //         tag: 'Online Store',
+    //         title: 'Suf Products',
+    //         link:'https://www.sufproducts.com/'
+    //     },
+    //     {
+    //         img: '/images/portfolio/img-12-rec.jpg',
+    //         tag: 'Cleaning',
+    //         title: 'Kennys Maintenance',
+    //         link:'https://kennysmaintenance.com/'
+    //     },
+    //     {
+    //         img: '/images/portfolio/img-13-rec.jpg',
+    //         tag: 'Media',
+    //         title: 'Fund Any Film',
+    //         link:'https://fundanyfilm.com/'
+    //     },
+    //     {
+    //         img: '/images/portfolio/img-14-rec.jpg',
+    //         tag: 'Modeling & Fashion',
+    //         title: 'Sinkwide',
+    //         link:'https://sinkwide.com/'
+    //     },
+    //     {
+    //         img: '/images/portfolio/img-15-sqr.jpg',
+    //         tag: 'Fitness',
+    //         title: 'Bzlap',
+    //         link:'https://bzlap.com/'
+    //     },
+    //     {
+    //         img: '/images/portfolio/img-16-sqr.jpg',
+    //         tag: 'Auto Accessories',
+    //         title: 'Windi Limo',
+    //         link:'https://windilimo.com/'
+    //     },
+    //     {
+    //         img: '/images/portfolio/img-17-sqr.jpg',
+    //         tag: 'Coffee House',
+    //         title: 'Windy City Limo',
+    //         link:'https://windycitylimo.net/'
+    //     },
+    //     {
+    //         img: '/images/portfolio/img-18-sqr.jpg',
+    //         tag: 'Automotive club',
+    //         title: 'Black Carbros',
+    //         link:'https://blackcarbros.com/'
+    //     },
+    //     {
+    //         img: '/images/portfolio/img-19-rec.jpg',
+    //         tag: 'Financial Advisor',
+    //         title: 'Munshisaab ',
+    //         link:'https://munshisaab.com/'
+    //     },
+    //     {
+    //         img: '/images/portfolio/img-20-rec.jpg',
+    //         tag: 'Digital Agency',
+    //         title: 'Sale Wizz',
+    //         link:'https://salewizz.com/#home'
+    //     },
+    //     {
+    //         img: '/images/portfolio/img-21-rec.jpg',
+    //         tag: 'Luxurious Product store',
+    //         title: 'Pakpre',
+    //         link:'https://pakpre.com/'
+    //     },
+    //     {
+    //         img: '/images/portfolio/img-22-sqr.jpg',
+    //         tag: 'Model & AD Agency',
+    //         title: 'Alice Photography',
+    //         link:'https://alice-photography.com/'
+    //     },
+    //     {
+    //         img: '/images/portfolio/img-23-sqr.jpg',
+    //         tag: 'Event Organization',
+    //         title: 'Vidzze ',
+    //         link:'https://vidzze.com/'
+    //     },
+    //     {
+    //         img: '/images/portfolio/img-24-sqr.jpg',
+    //         tag: 'Construction',
+    //         title: 'Kochwan',
+    //         link:'https://kochwan.com/'
+    //     },
+    //     {
+    //         img: '/images/portfolio/img-25-sqr.jpg',
+    //         tag: 'Digital Agency',
+    //         title: 'Bzlad',
+    //         link:'https://bzlad.com/#home-banner'
+    //     },
+    //     {
+    //         img: '/images/portfolio/img-26-rec.jpg',
+    //         tag: 'Digital Agency',
+    //         title: 'Alpa Technologies',
+    //         link:'https://alpatechnologies.com/'
+    //     },
+    //     {
+    //         img: '/images/portfolio/img-27-rec.jpg',
+    //         tag: 'Real Estate Agency',
+    //         title: 'Prince House',
+    //         link:'https://princehouse.net/'
+    //     },
+    //     {
+    //         img: '/images/portfolio/img-28-rec.jpg',
+    //         tag: 'Delicious Food',
+    //         title: 'Min 8 Away',
+    //         link:'https://min8away.com/'
+    //     },
+    //     {
+    //         img: '/images/portfolio/img-29-sqr.jpg',
+    //         tag: 'Weeding  Invitation',
+    //         title: 'Kistan',
+    //         link:'https://kistan.co/'
+    //     },
+    //     {
+    //         img: '/images/portfolio/img-30-sqr.jpg',
+    //         tag: 'digital Agency',
+    //         title: 'JJ Designs ',
+    //         link:'https://jamesjerrydesigns.com/'
+    //     },
+    //     {
+    //         img: '/images/portfolio/img-31-sqr.jpg',
+    //         tag: 'Logistics',
+    //         title: 'Upsidelinks',
+    //         link:'https://upsidelinks.com/'
+    //     },
+    //     {
+    //         img: '/images/portfolio/img-32-sqr.jpg',
+    //         tag: 'Luxurious Cars',
+    //         title: 'Spotlimo ',
+    //         link:'https://www.spotlimo.com/'
+    //     },
+    // ]
 
     return (
         <div className='recent-work-section'>
@@ -274,8 +287,9 @@ const RecentWork = () => {
                                         gridRow: `${row + 1} / span 1`
                                     }}
                                 >
-                                    <Link to={work.link} className='recent-work-card ' >
-                                    <img src={work.img} alt={work?.title} className='!rounded-2xl !sm:rounded-sm lg:rounded-xl'  />
+                                    <Link to={work.web_link} className='recent-work-card ' >
+                                    <img src={`http://localhost/materially-free-react-admin-template-1.0.0/materially-free-react-admin-template-1.0.0/api/website/${work.image}`} 
+                                    alt={work?.title} className='!rounded-2xl !sm:rounded-sm lg:rounded-xl'  />
                                     <div className="recent-content  ">
                                         <span>
                                             <img src="/images/flower-white.svg" alt="" className="flwr-white" />
@@ -283,7 +297,7 @@ const RecentWork = () => {
                                         </span>
                                         <h4>
                                             {
-                                                work?.tag
+                                                work?.description
                                             }
                                         </h4>
                                     </div>

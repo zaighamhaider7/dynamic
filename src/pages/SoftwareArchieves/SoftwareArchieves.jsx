@@ -5,11 +5,10 @@ import ServiceHeader from '../../components/Services/ServiceHeader'
 import Footer from '../../components/Generic/Footer'
 import { useLocation } from "react-router-dom";
 
-// const BASE_URL2 = 'http://localhost/materially-free-react-admin-template-1.0.0/agencywebsite-main/api';
-const BASE_URL2 = 'http://localhost/materially-free-react-admin-template-1.0.0/materially-free-react-admin-template-1.0.0/api';
-const BASE_URL = 'http://localhost/materially-free-react-admin-template-1.0.0/materially-free-react-admin-template-1.0.0/api';
+const BASE_URL2 = 'http://localhost/materially-free-react-admin-template-1.0.0/materially-free-react-admin-template-1.0.0/api/caseStudy copy';
+const BASE_URL = 'http://localhost/materially-free-react-admin-template-1.0.0/materially-free-react-admin-template-1.0.0/api/caseStudy copy/';
 
-const MobArchieves = () => {
+const SoftwareArchieves = () => {
 
     const { pathname } = useLocation();
 
@@ -21,7 +20,7 @@ const MobArchieves = () => {
     const [data, setData] = useState(null);
 
     useEffect(() => {
-        fetch(`${BASE_URL2}/getSingleMob.php?id=${id}`)
+        fetch(`${BASE_URL2}/getSingleSoftware.php?id=${id}`)
         .then(res => res.json())
         .then(res => {
             if (!res.error) setData(res);
@@ -34,9 +33,9 @@ const MobArchieves = () => {
 
     const Headdata = {
         pill: "Our Work",
-        titleOrange: data.app_name,
-        title: "MOBILE APP",
-        description: data.app_description
+        titleOrange: data.software_name,
+        title: "SOFTWARE",
+        description: data.software_description
     }
 
     return (
@@ -60,16 +59,16 @@ const MobArchieves = () => {
                             Our Top Rated Designs
                         </div>
                         <h2 className='text-2xl sm:text-5xl font-semibold text-white'>
-                            {data.app_title}
+                            {data.software_title}
                         </h2>
                         <p className="text-gray-800">
-                            {data.app_title_description}
+                            {data.software_title_description}
                         </p>
                     </div>
 
-                    {data.app_banner_image && (
+                    {data.software_banner_image && (
                         <img
-                        src={`${BASE_URL}/${data.app_banner_image}`}
+                        src={`${BASE_URL}/${data.software_banner_image}`}
                         alt="Hero"
                         className='w-full mt-20 mb-20 rounded-2xl'
                         />
@@ -146,4 +145,4 @@ const MobArchieves = () => {
     )
 }
 
-export default MobArchieves
+export default SoftwareArchieves

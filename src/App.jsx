@@ -27,6 +27,12 @@ import Benefits from './pages/SoftwareArchieves/Benefits'
 import Torkbiz from './pages/SoftwareArchieves/Torkbiz'
 import Bemax from './pages/SoftwareArchieves/Bemax'
 import Xisaas from './pages/SoftwareArchieves/Xisaas'
+import SoftwareArchieves from './pages/SoftwareArchieves/SoftwareArchieves'
+import PrivacyPolicy from './pages/privacy-policy'
+import DataHandling from './pages/data-handling'
+import ChangeManagement from './pages/ChangeManagement'
+import RefundPolicy from './pages/RefundPolicy'
+import ServiceLevelAgreement from './pages/service level agreement'
 import AboutUs from './pages/AboutUs/AboutUs'
 import Scrollbar from 'smooth-scrollbar';
 
@@ -74,7 +80,14 @@ function App() {
           <Route path="/software-archieves/Torkbiz" element={<Torkbiz />} />
           <Route path="/software-archieves/Benefits" element={<Benefits />} />
           <Route path="/software-archieves/InsightPro" element={<InsightPro />} />
+          <Route path="/mob-archieves/:id" element={<MobArchieves />} />
+          <Route path="/software-archieves/:id" element={<SoftwareArchieves />} />
           <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/data-handling-and-security" element={<DataHandling />} />
+          <Route path="/service-level-agreement" element={<ServiceLevelAgreement />} />
+          <Route path="/change-management" element={<ChangeManagement />} />
+          <Route path="/refund-policy" element={<RefundPolicy />} />
         </Routes>
       </BrowserRouter>
 

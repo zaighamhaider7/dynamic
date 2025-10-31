@@ -3,7 +3,10 @@ import Slider from 'react-slick'
 import { FaArrowLeftLong, FaArrowRightLong, FaXmark } from 'react-icons/fa6'
 import { FaDownload } from 'react-icons/fa'
 
+const BASE_URL = 'http://localhost/materially-free-react-admin-template-1.0.0/materially-free-react-admin-template-1.0.0/api/caseStudy/';
+
 const CaseStudies = () => {
+    const [data, setData] = useState([]);
 
     const sliderRef = useRef(null)
     const [lightboxOpen, setLightboxOpen] = useState(false)
@@ -46,62 +49,83 @@ const CaseStudies = () => {
         sliderRef.current?.slickPrev()
     }
 
-    const data = [
-        {
-            img: '/images/case studies/xpress.jpeg',
-            title: 'Digital Marketing',
-            description: "Xpress Pro Labs",
-            link: '/digital-marketing-case-study'
-        },
-        {
-            img: '/images/case studies/spot.jpeg',
-            title: 'Digital Marketing',
-            description: "Spotlimo",
-            link: '/digital-marketing-case-study'
-        },
-        {
-            img: '/images/case studies/scott.jpeg',
-            title: 'Digital Marketing',
-            description: "Scott Soderstrom",
-            link: '/digital-marketing-case-study'
-        },
-        {
-            img: '/images/case studies/mcc.jpeg',
-            title: 'Digital Marketing',
-            description: "Middleton-CC",
-            link: '/digital-marketing-case-study'
-        },
-        {
-            img: '/images/case studies/dtr.jpeg',
-            title: 'Digital Marketing',
-            description: "Dtr-Company",
-            link: '/digital-marketing-case-study'
-        },
-        {
-            img: '/images/case studies/bzlap.jpeg',
-            title: 'Digital Marketing',
-            description: "Bzlap",
-            link: '/digital-marketing-case-study'
-        },
-    ]
+    // const data = [
+    //     {
+    //         img: '/images/case studies/xpress.jpeg',
+    //         title: 'Digital Marketing',
+    //         description: "Xpress Pro Labs",
+    //         link: '/digital-marketing-case-study'
+    //     },
+    //     {
+    //         img: '/images/case studies/spot.jpeg',
+    //         title: 'Digital Marketing',
+    //         description: "Spotlimo",
+    //         link: '/digital-marketing-case-study'
+    //     },
+    //     {
+    //         img: '/images/case studies/scott.jpeg',
+    //         title: 'Digital Marketing',
+    //         description: "Scott Soderstrom",
+    //         link: '/digital-marketing-case-study'
+    //     },
+    //     {
+    //         img: '/images/case studies/mcc.jpeg',
+    //         title: 'Digital Marketing',
+    //         description: "Middleton-CC",
+    //         link: '/digital-marketing-case-study'
+    //     },
+    //     {
+    //         img: '/images/case studies/dtr.jpeg',
+    //         title: 'Digital Marketing',
+    //         description: "Dtr-Company",
+    //         link: '/digital-marketing-case-study'
+    //     },
+    //     {
+    //         img: '/images/case studies/bzlap.jpeg',
+    //         title: 'Digital Marketing',
+    //         description: "Bzlap",
+    //         link: '/digital-marketing-case-study'
+    //     },
+    // ]
 
     // Keyboard navigation for lightbox
-    useEffect(() => {
-        if (!lightboxOpen) return
-        const handleKeyDown = (event) => {
-            if (event.key === 'ArrowRight') {
-                setLightboxIndex((prev) => (prev + 1) % data.length)
-            } else if (event.key === 'ArrowLeft') {
-                setLightboxIndex((prev) => (prev - 1 + data.length) % data.length)
-            } else if (event.key === 'Escape') {
-                setLightboxOpen(false)
-            }
-        }
-        window.addEventListener('keydown', handleKeyDown)
-        return () => {
-            window.removeEventListener('keydown', handleKeyDown)
-        }
-    }, [lightboxOpen])
+    
+        useEffect(() => {
+            fetch(`${BASE_URL}/getCases.php`)
+            .then(res => res.json())
+            .then(res => {
+                if (Array.isArray(res)) {
+                    setData(res.slice(0, 6));
+                } else {
+                    console.error('Invalid response:', res);
+                }
+            })
+            .catch(console.error);
+        }, []);
+
+
+        useEffect(() => {
+            if (!lightboxOpen || data.length === 0) return;
+
+            const handleKeyDown = (event) => {
+                if (event.key === 'ArrowRight') {
+                    setLightboxIndex((prev) => (prev + 1) % data.length);
+                } else if (event.key === 'ArrowLeft') {
+                    setLightboxIndex((prev) => (prev - 1 + data.length) % data.length);
+                } else if (event.key === 'Escape') {
+                    setLightboxOpen(false);
+                }
+            };
+
+            window.addEventListener('keydown', handleKeyDown);
+            return () => {
+                window.removeEventListener('keydown', handleKeyDown);
+            };
+        }, [lightboxOpen, data]);
+
+
+
+
 
     return (
         <div className='case-studies-section overflow-hidden'>
@@ -140,7 +164,7 @@ const CaseStudies = () => {
                             <div key={index} className='px-5'>
                                 <div className='case-study-card'>
                                     <img
-                                        src={item.img}
+                                        src={`http://localhost/materially-free-react-admin-template-1.0.0/materially-free-react-admin-template-1.0.0/api/caseStudy/${item.image}`}
                                         alt={item.title}
                                         className='w-full h-full object-cover cursor-pointer'
                                         onClick={() => { setLightboxIndex(index); setLightboxOpen(true) }}
@@ -194,7 +218,7 @@ const CaseStudies = () => {
 
                     <div className="max-w-[90vw] max-h-[80vh] p-2" onClick={(e) => e.stopPropagation()}>
                         <img
-                            src={data[lightboxIndex].img}
+                            src={`http://localhost/materially-free-react-admin-template-1.0.0/materially-free-react-admin-template-1.0.0/api/caseStudy/${data[lightboxIndex].image}`}
                             alt={data[lightboxIndex].title}
                             className="w-auto h-auto max-w-full max-h-[80vh] object-contain rounded-lg"
                         />
@@ -215,7 +239,7 @@ const CaseStudies = () => {
                     {/* Download */}
                     <div className="absolute bottom-4 right-4" onClick={(e) => e.stopPropagation()}>
                         <a
-                            href={data[lightboxIndex].img}
+                            href={`http://localhost/materially-free-react-admin-template-1.0.0/materially-free-react-admin-template-1.0.0/api/caseStudy/${data[lightboxIndex].image}`}
                             download
                             aria-label="Download image"
                             className="custom-slick-arrow inline-flex items-center justify-center"

@@ -1,7 +1,19 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom'
+const BASE_URL = 'http://localhost/materially-free-react-admin-template-1.0.0/materially-free-react-admin-template-1.0.0/api/website/';
+
 
 const ShowCase = () => {
+    const [projects, setProjects] = useState([]);
+
+    useEffect(() => {
+        fetch(`${BASE_URL}/getRecentWork.php`)
+        .then(res => res.json())
+        .then(data => {
+            if (Array.isArray(data)) setProjects(data); // only first 7
+        })
+        .catch(console.error);
+    }, []);
     return (
         <div className='showcase-section'>
             <div className="container">
@@ -21,7 +33,8 @@ const ShowCase = () => {
 
                 <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:my-16 my-10 min-h-[600px] gap-3 sm:gap-3 md:gap-4 lg:gap-5">
                     <div className='grid lg:grid-flow-col lg:grid-rows-2 lg:grid-cols-none grid-cols-2 gap-5'>
-                        <div className='recent-work-card'>
+
+                        {/* <div className='recent-work-card'>
                              <Link to='https://xpressprolabs.com/' className='recent-work-card' >
                                 <img src='/images/portfolio/img-5-rec.jpg' alt="" className='aspect-auto h-full !rounded-2xl !sm:rounded-sm lg:rounded-2xl' />
                                 <div className="recent-content">
@@ -48,11 +61,17 @@ const ShowCase = () => {
                                     </h4>
                                 </div>
                             </Link>
-                        </div>
+                        </div> */}
+                        {projects[4] && (
+                        <ShowCard item={projects[4]} />
+                        )}
+                        {projects[5] && (
+                        <ShowCard item={projects[5]} />
+                        )}
                     </div>
 
                     <div className=''>
-                        <div className='recent-work-card h-full' >
+                        {/* <div className='recent-work-card h-full' >
                              <Link to='https://oexcapitalpro.com/' className='recent-work-card' >
                                 <img src='/images/portfolio/img-4-sqr.jpg' alt="" className='aspect-auto h-full !rounded-2xl !sm:rounded-sm lg:rounded-2xl' />
                                 <div className="recent-content">
@@ -65,11 +84,15 @@ const ShowCase = () => {
                                     </h4>
                                 </div>
                             </Link>
-                        </div>
+                        </div> */}
+
+                        {projects[3] && (
+                            <ShowCard item={projects[3]} full />
+                        )}
                     </div>
 
                     <div className='grid lg:grid-flow-col lg:grid-rows-5 lg:grid-cols-none grid-cols-2 gap-5'>
-                        <div className='recent-work-card lg:row-span-2' >
+                        {/* <div className='recent-work-card lg:row-span-2' >
                             <Link to='https://scottsoderstrom.com/' className='recent-work-card' >
                                 <img src='/images/portfolio/img-1-sqr.webp' alt="" className='aspect-auto h-full !rounded-2xl !sm:rounded-sm lg:rounded-2xl' />
                                 <div className="recent-content">
@@ -96,11 +119,18 @@ const ShowCase = () => {
                                     </h4>
                                 </div>
                             </Link>
-                        </div>
+                        </div> */}
+
+                        {projects[0] && (
+                            <ShowCard item={projects[0]} rowSpan="row-span-2" />
+                        )}
+                        {projects[12] && (
+                            <ShowCard item={projects[12]} rowSpan="row-span-3" />
+                        )}
                     </div>
 
                     <div className='grid lg:grid-flow-col lg:grid-rows-5 lg:grid-cols-none grid-cols-2 gap-5'>
-                        <div className='recent-work-card lg:row-span-3' >
+                        {/* <div className='recent-work-card lg:row-span-3' >
                             <Link to='https://kennysmaintenance.com/' className='recent-work-card' >
                                 <img src='/images/portfolio/img-12-rec.jpg' alt="" className='aspect-auto h-full !rounded-2xl !sm:rounded-sm lg:rounded-2xl' />
                                 <div className="recent-content">
@@ -127,7 +157,14 @@ const ShowCase = () => {
                                     </h4>
                                 </div>
                             </Link>
-                        </div>
+                        </div> */}
+
+                        {projects[11] && (
+                            <ShowCard item={projects[10]} rowSpan="row-span-3" />
+                        )}
+                        {projects[6] && (
+                            <ShowCard item={projects[1]} rowSpan="row-span-2" />
+                        )}
                     </div>
                 </div>
 
@@ -138,5 +175,24 @@ const ShowCase = () => {
         </div>
     )
 }
+
+const ShowCard = ({ item, full = false, rowSpan = "" }) => (
+  <div className={`recent-work-card ${rowSpan} ${full ? 'h-full' : ''}`}>
+    <Link to={item.web_link} className='recent-work-card' >
+        <img
+        src={`http://localhost/materially-free-react-admin-template-1.0.0/materially-free-react-admin-template-1.0.0/api/website/${item.image}`} 
+        alt={item.title}
+        className="aspect-auto h-full"
+        />
+        <div className="recent-content">
+        <span>
+            <img src="/images/flower-white.svg" alt="" className="flwr-white" />
+            {item.title}
+        </span>
+        <h4>{item.description}</h4>
+        </div>
+    </Link>
+  </div>
+);
 
 export default ShowCase

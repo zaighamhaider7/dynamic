@@ -91,6 +91,7 @@ const LinguaGo = () => {
                     <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-10 gap-6">
                         <div>
                             <img className='mt-20 mb-20 rounded-2xl' src="/images/appsPortfolio/Language App/Language 5 Screen App/4.png" alt="" />
+                            
                             <p className='text-md sm:text-3xl text-white'>
                                 While most language apps focus on reading and repetition, LinguaGo emphasizes speaking and interaction. It helps users communicate naturally and confidently through an experience that’s smart, adaptive, and truly conversational.
                             </p>

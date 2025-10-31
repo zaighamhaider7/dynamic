@@ -1,24 +1,28 @@
 import React from 'react'
 import { BsArrowRight } from 'react-icons/bs'
 
-const ProjectCard = ({ project }) => {
+const ProjectCard = ({ work }) => {
     return (
         <div className="project-card" >
-            <h3>{project.category}</h3>
+            <h3>{work.id}</h3>
             <div className="project-details">
                 <div>
-                    <h4>{project.title}</h4>
+                    <h4>{work.title}</h4>
                     {
-                        project?.description &&
-                        <p>{project.description}</p>
+                        work?.description &&
+                        <p>{work.description}</p>
                     }
                 </div>
                 <span className='arrow-project'>
-                    <BsArrowRight />
+                    <a href={work.web_link} target="_blank" rel="noopener noreferrer" >
+                        <BsArrowRight />
+                    </a>
+                    {/* <BsArrowRight /> */}
                 </span>
             </div>
             <div className="project-image">
-                <img src={project.image} alt={project.title} className='rounded-lg md:h-[260px] h-full w-full' />
+                <img src={`http://localhost/materially-free-react-admin-template-1.0.0/materially-free-react-admin-template-1.0.0/api/website/${work.image}`}
+                alt={work.title} className='rounded-lg  h-full w-full' />
             </div>
         </div>
     )

@@ -292,7 +292,7 @@ const Navbar = () => {
                                     className="mobile-service-links"
                                     style={{
                                     maxHeight: '200px',
-                                    overflowY: 'auto',
+                                    overflowY: 'hidden',
                                     paddingLeft: '1rem',
                                     }}
                                 >
@@ -320,13 +320,14 @@ const Navbar = () => {
 
                     <li><a href="/portfolio" className={`mobile-nav-link ${isActive('/portfolio') ? 'active' : ''}`} onClick={() => setIsMobileMenuOpen(false)}>Work</a></li>
                     <li><a href="/about-us" className={`mobile-nav-link ${isActive('/about-us') ? 'active' : ''}`} onClick={() => setIsMobileMenuOpen(false)}>About Us</a></li>
-                    <li><a href="#" className={`mobile-nav-link ${isActive('/contact') ? 'active' : ''}`} onClick={handleOpen}>Contact Us</a></li>
+                    {/* <li><a href="#" className={`mobile-nav-link ${isActive('/contact') ? 'active' : ''}`} onClick={handleOpen}>Contact Us</a></li> */}
                 </ul>
 
                 {/* Login/Register - outside scroll */}
                 <div className="mobile-auth flex gap-2 px-10 py-5 border-t border-gray-700">
-                    <a href="/" className="bg-orange-600 text-white text-center py-2 rounded w-full block mb-2" onClick={() => setIsMobileMenuOpen(false)}>Login</a>
-                    <a href="/" className="bg-transparent border-gray-700 border text-white text-center py-2 rounded w-full mb-2" onClick={() => setIsMobileMenuOpen(false)}>Register</a>
+                    {/* <a href="/" className="bg-orange-600 text-white text-center py-2 rounded w-full block mb-2" onClick={() => setIsMobileMenuOpen(false)}>Login</a>
+                    <a href="/" className="bg-transparent border-gray-700 border text-white text-center py-2 rounded w-full mb-2" onClick={() => setIsMobileMenuOpen(false)}>Register</a> */}
+                    <a href="#" className={`bg-orange-600 text-white text-center py-2 rounded w-full block mb-2 mobile-nav-link ${isActive('/contact') ? 'active' : ''}`} onClick={handleOpen}>Contact Us</a>
                 </div>
                 </div>
 

@@ -115,8 +115,8 @@ const Footer = () => {
                     <div className="border-t border-gray-800 md:mt-12 mt-8 md:pt-8 pt-5 flex flex-col md:flex-row justify-between items-center">
                         <p className="text-gray-700 text-sm">© 2025 All Rights Reserved.</p>
                         <div className="flex space-x-6 mt-2 md:mt-0">
-                            <a href="#" className="footer-link">Privacy Policy</a>
-                            <a href="#" className="footer-link">Terms & Conditions</a>
+                            <a href="/privacy-policy" className="footer-link">Privacy Policy</a>
+                            <a href="/data-handling-and-security" className="footer-link">Data Handling and Security</a>
                         </div>
                     </div>
                     <img src="/images/WIZSPEED.svg" alt="" className="footer-bg w-full mt-8" />

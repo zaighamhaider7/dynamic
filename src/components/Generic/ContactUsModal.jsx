@@ -65,7 +65,7 @@ export default function ContactUsModal({ open, onClose }) {
                                 Projects Together
                             </span>
                         </h2>
-                        <p>
+                        <p >
                             Stacks connects to Bitcoin, enabiling you to build apps, smart
                             contracts, and digital assets that are integerated with Bitcoin`s
                             security, capital , and networks.
@@ -232,13 +232,13 @@ export default function ContactUsModal({ open, onClose }) {
                     {/* Right Side - Service Grid */}
                     <div className='right-frm'>
                         <div className='flex flex-col items-end text-right'>
-                            <a href="tel:+13127965599" className='right-a'>
+                            <a href="tel:+13127965599" className='right-a !text-[13px] sm:!text-[30px]'>
                                 +1 312 796 5599
                             </a>
-                            <a href="mailto:contact@wizspeed.com" className='right-a uppercase !text-[18px] sm:!text-[30px]'>
+                            <a href="mailto:contact@wizspeed.com" className='right-a uppercase !text-[13px] sm:!text-[30px]'>
                                 contact@wizspeed.com
                             </a>
-                            <p className="mt-3">
+                            <p className="mt-3 lg:text-base text-[10px]">
                                 5250 old archard rd, Suite #300, Skakie 11, 60077
                             </p>
                         </div>
